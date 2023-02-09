@@ -48,12 +48,12 @@
 ## Step 2. RTT_Computation
 
 ### RTT1/example (host ip錄影之後要補改, 還要加上result!)
-- nslab_[domain].pcap
+- nslab_[VPN first domain].pcap
     - These .pcap files are traffic between Nslab and VPN. For example, use `tcpdump -nn -r nslab_pl128.pcap`, we can get the traffic between the host and VPN. Host ip will depend on your host machine, if we want to do the experiment in Nslab, then the host ip will be **140.112.x.x**
     - In this example, **xx.xx.xx.xx** is our host ip. We need to find 
 Time1 ... IP host_ip > VPN_ip ... **request** ... , seq **i** ...
 Time2 ... VPN_ip > IP host_ip ... **reply** ... , seq **j** ...
-if i == j, then we pair the two packets and the RTT of this pair will be Time1 - Time2, and finally get the minimum RTT between all pairs to be the RTT between Nslab and this VPN.
+if i == j, then we pair the two packets and the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs to be the RTT between Nslab and this VPN.
 - a_main.sh
     - The example compute the RTT of the three pcapfile we get in Traffic1_Nslab_VPN. First we convert the pcapfile to text file for easy operation.
     - If your host is in the nslab, then the host_ip should change to the nslab ip: **140.112.x.x**.
@@ -74,12 +74,29 @@ if i == j, then we pair the two packets and the RTT of this pair will be Time1 -
 - Besides, the file RTT1_for_RTT2.txt RTT1_for_RTT3.txt are RTT1 between NSLAB and 82 VPN in my experiment for subtraction.
 
 ### RTT2
-- pcapfile - aconvert_totxt.sh
-    - we want to get compute the RTT of all pair between 82 VPN and 60 ingest server. First we use the script to convert the pcapfile to text file for easy operation
-- txtfile
+- /pcapfile 
+    
+    - a_vpn.txt: VPN list (named in city)
+    - a_ingest.txt: ingest server list (named in city)
+    - lrtt\_[VPN]\_[ingest].pcap
+        - These .pcap files are traffic between VPN and ingest server. For example, use `tcpdump -nn -r lrtt_Adelaide_Ashburn_VA3.pcap`, we can get the traffic between Adelaide VPN and Ashburn_VA3 ingest server. And VPN ip will be your **vpn_net_interface** (varies by machines).
+        - In this example, 
+Time1 ... IP VPN_ip > ingest_ip ... seq num_s:**num_t** ...
+...
+Time2 ... ingest_ip > IP VPN_ip ... ack **num**
+if num_t == num, then pair the two packets and compute the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs, and then pass the RTT to make adjustment to get the adjusted RTT2.
     - a_main.sh
-        - after the conversion, the for loop will compute the RTT, but the RTT include the RTT1. So we run the following script **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT and adjust the RTT to nonnegative value.
-        -  [excel] finally in this file we get the RTT of each VPN_ingest pair.
+        - To get the RTT of all pair between 82 VPN and 60 ingest server in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
+- /txtfile
+    - a_main.sh
+        - After the conversion, the for loop will **bash lcompute.sh** to compute the RTT between each VPN and each ingest server, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
+        -  `xdg-open RTT2_VPNs.ods` to get the RTT2
+    - lcompute.sh
+        - We get:
+            - timestamp.txt
+                - all packets' timestamp
+            - seq_acktime.txt
+                - If time_stamp is 05\:27:36.164483, it will be parsed out 0527.36164483
 
 ### RTT3
 - pcapfile - aconvert_totxt.sh
