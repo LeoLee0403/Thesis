@@ -31,7 +31,7 @@
 - switch_obs.sh
     - It will switch the ingest server to the next one according to the OBS list. For example, if now ingest is Taipei(3), then it will switch to Taipei(1) for streaming.
 - ldetet_and_test_example.sh
-    - It will accept a VPN and a ingest server, and you need to take change vpn_net_interface (varies by machines). You can use ifconfig to find the interface. The NordVPN interface usually **10.x.x.x** ![](https://i.imgur.com/zzJ85OF.png)
+    - It will accept a VPN and a ingest server, and you need to take change vpn_net_interface (varies by machines). You can use ifconfig to find the interface. The **vpn_net_interface** in this case is **nordlynx**, and the **vpn_net_interface IP** usually **10.x.x.x** ![](https://i.imgur.com/zzJ85OF.png)
     - Use `nordvpn connect ${vpn}` to connect the NordVPN, the VPN we used is **city name**, After connection, it will check the connect_status, if VPN failed then change to next VPN with another location to probe the same ingest server.
     - OBS Connection Test: `obs --startstreaming&` to start streaming, it will generate the traffic between the VPN and the ingest server. And you should sleep for more than 10 sec to wait the OBS open. Then this example uses tcpdump to intercept the traffic for 10 sec. If the **reply_packet_count** from twitch ingest server less than threshold (this example set the threshold = 20 packets), then regard it as OBS Failed, then exit and change to next VPN with another location to probe the same ingest server.
     - Formal Tcpdump: If pass the OBS connection test, this example will do formal tcpdump for 10 sec, and if **formal_reply_packet_count** less than 50, then regard it as OBS failed. Else regard it as successfully interception.
@@ -54,7 +54,7 @@
         - Time1 ... IP host_ip > VPN_ip ... **request** ... , seq **i** ...
         - ...
         - ...
-        - Time2 ... VPN_ip > IP host_ip ... **reply** ... , seq **j** ...
+        - Time2 ... IP VPN_ip > host_ip ... **reply** ... , seq **j** ...
         - if i == j, then we pair the two packets and the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs to be the RTT between Nslab and this VPN.
 - a_main.sh
     - The example compute the RTT of the three pcapfile we get in Traffic1_Nslab_VPN. First we convert the pcapfile to text file for easy operation.
@@ -77,11 +77,10 @@
 
 ### RTT2
 - /pcapfile 
-    
     - a_vpn.txt: VPN list (named in city)
     - a_ingest.txt: ingest server list (named in city)
     - lrtt\_[VPN]\_[ingest].pcap
-        - These .pcap files are traffic between VPN and ingest server. For example, use `tcpdump -nn -r lrtt_Adelaide_Ashburn_VA3.pcap`, we can get the traffic between Adelaide VPN and Ashburn_VA3 ingest server. And VPN ip will be your **vpn_net_interface** (varies by machines).
+        - These .pcap files are traffic between VPN and ingest server. For example, use `tcpdump -nn -r lrtt_Adelaide_Ashburn_VA3.pcap`, we can get the traffic between Adelaide VPN and Ashburn_VA3 ingest server. And VPN ip will be your **vpn_net_interface\'s IP** (varies by machines).
         - In this example, 
             - Time1 ... IP VPN_ip > ingest_ip ... seq num_s:**num_t** ... 
             - ...
@@ -89,10 +88,10 @@
             - Time2 ... IP ingest_ip >  VPN_ip ... ack **num** ...
             - if num_t == num, then pair the two packets and compute the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs, and then pass the RTT to make adjustment to get the adjusted RTT2.
     - a_main.sh
-        - To get the RTT of all pair between 82 VPN and 60 ingest server in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
+        - To get the RTT of all pairs between 82 VPN and 60 ingest server in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
 - /txtfile
     - a_main.sh
-        - After the conversion, the for loop will **bash lcompute.sh** to compute the RTT between each VPN and each ingest server, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
+        - After the conversion, the for loop will do **lcompute.sh** to compute the RTT between each VPN and each ingest server, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
         -  `xdg-open RTT2_VPNs.ods` to get the RTT2
     - lcompute.sh
         - timestamp.txt
@@ -108,7 +107,7 @@
         - **lrtt.py** receive above data to compute the RTT
         - output the minimum RTT to **THIS_minrtt_result.txt**
     - lrtt.py
-        - Compute the useful time (value in second) and minus bias to reset the first packet's time value is 0.
+        - Compute the useful time value (in second) and minus bias to reset the first packet's time value is 0.
         - #Run
             - seq packet (VPN_ip > ingest_ip) will examine whether the packet is retransmission packet by examining prior packets' seqnum. If yes, then the two packet will be invalid. If no retransmission, then add the packet's seqnum to the queue.
             - ack packet (ingest_ip > VPN_ip) will check the seqnum in point_start ~ 
@@ -123,18 +122,34 @@
 
 
 ### RTT3
-- pcapfile - aconvert_totxt.sh
-    - we want to get compute the RTT of all pair between 82 VPN each other, and use the script to convert the pcapfile to text file.
+- pcapfile
+    - vping\_[VP_VPN]\_[LM_VPN].pcap
+        - These .pcap files are traffic between VPN each other. For example, use `tcpdump -nn -r vping_al18_ar29.pcap`, we can get the traffic between the al18 VP_VPN and ar29 LM_VPN. And VP_VPN's IP will be vpn_net_interface IP
+            - In this example,
+            - Time1 ... IP VP_VPN_ip > LM_VPN_ip ... **request** ... , seq **i** ...
+            - ...
+            - ...
+            - Time2 ... IP LM_VPN_ip > VP_VPN_ip ... **reply** ... , seq **j** ...
+            - if i == j, then we pair the two packets and the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs, and then pass the RTT to make adjustment to get the adjusted RTT3.
+    - vpn_codename.txt
+        - First domain of each VPN in different location.
+    - a_main.sh
+        - To get the RTT of all pairs between 82 VPN each other in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
 - txtfile
     - a_main.sh
-        - like getting RTT2, the for loop compute the RTT, and use **a_get_adjusted_RTT.sh.sh** to minus RTT1 from the RTT and adjust the RTT to nonnegative value.
-        - [excel] finally in the file we get the RTT between VPN each other
+        - After the conversion, the for loop will do **compute_RTT.sh** to compute the RTT between VPN each other, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
+        -  `xdg-open RTT3_VPNs.ods` to get the RTT3
+    -  compute_RTT.sh
+    -  comput_v1pingv2.py
+    -  a_get_adjusted_RTT.sh
+        - Receive RTT1_for_RTT3.txt, avpnping_min.txt (minimum RTT from **compute_RTT.sh**)
+        - Run **find_min_rtt.py** to do minimum RTT - RTT1, and between each VP_VPN and all LM_VPN, output negative minimum RTT.
+        - Run **adjust.py** to do: RTT between each VP_VPN to all LM_VPN will be subtracted by the negative minimum RTT to adjust the RTT value to be non-negative.
 
 ## Step 3. Implement Geolocation Methods
 - 1shortest_ping
     - a_main.sh
-        - shortest ping focus on mapping the ingest server to the VPN with smallest RTT. 
-for each ingest server, it will sort VPN according to the RTT from low to high.
+        - shortest ping focus on mapping the ingest server to the VPN with smallest RTT. for each ingest server, it will sort VPN according to the RTT from low to high.
         - [RUN]
         - **xdg-open 1shortest_ping.ods** to get the shortest ping result
 - 2geoping
