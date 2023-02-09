@@ -10,7 +10,7 @@
     - a_reset.sh
         - it will remove the output file. if you want redo the experiment, then you can run the file and then run a_main.sh again.
         
-- [Traffic1_Nslab_VPN](https://hackmd.io/iQVMaQXVSNypzfCJ4_7Q5A?both)
+- Traffic1_Nslab_VPN
     - a_main.sh
         - we ping each vpn from NSLAB and use tcpdump to intercept the traffic and save to pcapfile. The example show ping 3 vpn for 10 second. [RUN要拍] and we finally get 3 pcapfile
 
