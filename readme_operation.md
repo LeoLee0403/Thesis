@@ -86,7 +86,7 @@
             - Time1 ... IP VPN_ip > ingest_ip ... seq num_s:**num_t** ... 
             - ...
             - ...
-            - Time2 ... ingest_ip > IP VPN_ip ... ack **num** ...
+            - Time2 ... IP ingest_ip >  VPN_ip ... ack **num** ...
             - if num_t == num, then pair the two packets and compute the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs, and then pass the RTT to make adjustment to get the adjusted RTT2.
     - a_main.sh
         - To get the RTT of all pair between 82 VPN and 60 ingest server in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
@@ -95,11 +95,32 @@
         - After the conversion, the for loop will **bash lcompute.sh** to compute the RTT between each VPN and each ingest server, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
         -  `xdg-open RTT2_VPNs.ods` to get the RTT2
     - lcompute.sh
-        - We get:
-            - timestamp.txt
-                - all packets' timestamp
-            - seq_acktime.txt
-                - If time_stamp is 05\:27:36.164483, it will be parsed out 0527.36164483
+        - timestamp.txt
+            - All packets' timestamp
+        - seq_acktime.txt
+            - If time_stamp is 05\:27:36.164483, it will be parsed out 0527.36164483
+        - seq_or_ack.txt
+            - Determine this packet is seq or ack packet
+        - tun0ip.txt
+            - Get vpn_net_interface IP
+        - tun0ip_or_ingestip.txt
+            - Determine this packet is VPN_ip > ingest_ip or ingest_ip > VPN_ip
+        - **lrtt.py** receive above data to compute the RTT
+        - output the minimum RTT to **THIS_minrtt_result.txt**
+    - lrtt.py
+        - Compute the useful time (value in second) and minus bias to reset the first packet's time value is 0.
+        - #Run
+            - seq packet (VPN_ip > ingest_ip) will examine whether the packet is retransmission packet by examining prior packets' seqnum. If yes, then the two packet will be invalid. If no retransmission, then add the packet's seqnum to the queue.
+            - ack packet (ingest_ip > VPN_ip) will check the seqnum in point_start ~ 
+                - point_now. point_now is current packet we examine.
+                - point_start is the next seqnum to be checked by the ack packet
+            - if queue[i] = acknum[point_now] then pair the two packets and compute the RTT of the pair to output_rtt. And the point_start will also make point_start jump to next valid seqnum in the queue
+        - Finally getting all RTT of all pairs.
+    - a_get_adjusted_RTT.sh
+        - Receive RTT1_for_RTT2.txt, THIS_minrtt_result.txt (minimum RTT from **lcompute.sh**)
+        - Run **find_min_rtt.py** to do minimum RTT - RTT1, and between each VPN and all ingest server, output negative minimum RTT.
+        - Run **adjust.py** to do: RTT between each VPN to all ingest server will be subtracted by the negative minimum RTT to adjust the RTT value to be non-negative.
+
 
 ### RTT3
 - pcapfile - aconvert_totxt.sh
