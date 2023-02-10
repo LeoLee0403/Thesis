@@ -77,7 +77,7 @@
 - Besides, the file RTT1_for_RTT2.txt RTT1_for_RTT3.txt are RTT1 between NSLAB and 82 VPN in my experiment for subtraction.
 
 ### RTT2
-- /pcapfile 
+- pcapfile 
     - a_vpn.txt: VPN list (named in city)
     - a_ingest.txt: ingest server list (named in city)
     - lrtt\_[VPN]\_[ingest].pcap
@@ -90,7 +90,7 @@
             - if num_t == num, then pair the two packets and compute the RTT of this pair is Time2 - Time1, and finally get the minimum RTT between all pairs, and then pass the RTT to make adjustment to get the adjusted RTT2.
     - a_main.sh
         - To get the RTT of all pairs between 82 VPN and 60 ingest server in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
-- /txtfile
+- txtfile
     - a_main.sh
         - After the conversion, the for loop will do **lcompute.sh** to compute the RTT between each VPN and each ingest server, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
         -  `xdg-open RTT2_VPNs.ods` to get the RTT2
@@ -200,7 +200,7 @@
         2. ingetrtt (first $top ingest)
         3. vpn (82 VPN) 
         4. vpnrtt (RTT3 between VPN each other)
-    - Compute Euclidean Distance by $$\sqrt{\Sigma{(ingestrtt- vpnrtt)^2}}$$ and output Euclidean Distance to **diff**.
+    - Compute Euclidean Distance by $\sqrt{\Sigma{(ingestrtt- vpnrtt)^2}}$ and output Euclidean Distance to **diff**.
 - sort_diff.py
     - receive diff list and sort VPN with diff from low to high
 - [outputfile] aa_[ingest].txt
@@ -275,27 +275,69 @@
     - `xdg-open 6Hybrid2.ods` to get the Hybrid2 result
 
 ## Step 4. Evaluation and Analysis
-- Rank difference 
-    - a_main.sh
-        - first we have ground truth of each ingest server. And we have sorted VPN according to each method's metric. 
-        - For example, in **shortest ping**, the RTT is small then the rank will be high. 
-        - the for loop find the rank of the ground truth VPN, and minus 1 to get the rank difference of each ingest server of each method
-        - and we can use the **performance.sh** script to output the count in each rank difference
-    - performance.txt
-        - finally the result is shown in this file, we can get the count in each rank difference and get the Cumulative probability in each range.
-    
-- Error distance
-    - a_main.sh
-        - first the for loop will get the mapped VPN, which is the first mapping priority VPN in each method, and then compute the distance between the mapped VPN and gournd truth to be error distance of the ingest server of each method.
-        - Besides, we caculate the total error distance of each method, this is the most important evaluation metric.
-    - performance.txt
-        - finally the result is shown in this file, we can get the count in each error distance range and get the Cumulative probability in each range. And the total error ditance is shown below.
+
+### Metric and data in each geolocation method
+- Shortest ping
+    - File: aa_[ingest].txt
+    - Metric: RTT
+- Geoping
+    - File: aa_[ingest].txt
+    - Metric: Euclidean Distance
+- Shortest distance
+    - File: a_sorted_[ingest].txt
+    - Metric: Predict target distance
+- CBG
+    - File: a_sorted_count_[ingest].txt
+    - Metric: Circle cover count
+- Hybrid1
+    - File: a_sorted_point_[ingest].txt
+    - Metric: Total point
+- Hybrid2
+    - File: a_sorted_point_[ingest].txt
+    - Metric: Total point
+
+### Rank difference in /err rank
+- a_main.sh
+    - First we have **ground truth** (use a VPN represent the ground truth called **ground truth VPN**) of each ingest server for evaluation. And we have sorted VPN according to each method's metric. 
+    - For loop finds the rank of the ground truth VPN of each ingest server of each method, and then minus 1 from the rank to get the **rank difference**, and rank difference in each ingest is in **[method]_rankdiff.txt**, and the corresponding ingest server is in the same order in a_ingest.txt
+    - **performance.sh** output the statistics to **performance.txt**
+- performance.txt
+    - Results include the number of ground truth VPN in each rank difference of each method, and get the Cumulative probability in each rank difference range.
+
+### Error distance in /err_dist
+- a_main.sh
+    - **mapped_vpn** is the first mapping priority VPN in each method
+    - Compute the distance between the mapped VPN and gournd truth to be error distance (if more than one error distance, find minimum) of each ingest server of each method. And error distance in each ingest is in **err_dist_[method].txt**
+    - Compute the **total error distance** of each method, which is the most important evaluation metric.
+    - **performance.sh** output the statistics to **performance.txt**
+- performance.txt
+    - Results include the number of mapping in different error distance range of each method, and get the Cumulative probability in each error distance range.
 
 ## README.txt要補充的
  1. 每個資料夾都有a_main.sh and a_reset.sh
  2. .sh檔用bash執行檔案 e.g. bash a_main.sh
- 3. .py用python3執行檔案 e.g. python3.performance.py
+ 3. .py用python3執行檔案 e.g. python3.performance.p
 
- 1. 每個資料夾都有a_main.sh and a_reset.sh
- 2. .sh檔用bash執行檔案 e.g. bash a_main.sh
- 3. .py用python3執行檔案 e.g. python3.performance.py
+# 要處理事項
+1. **先上傳論文**
+2. **Step3 所有.ods前都要先round 3**
+3. 檢查資料一致性
+    - RTT2 pcap -> txt再跑完並和geolocation的做比對
+    - RTT3 pcap -> txt再跑完並和geolocation的做比對
+    - ingest_rtt也要和 geolocation做比對才能在Step3用
+    - nord_rtt.txt, vpn_rtt.txt也要做比對才能在Step3用
+    - CBG predict 要從剛完成的shortest dist資料夾拿才run
+    - Hybrid1 2的cover_rank和dist_rank要從CBG和shortest dist資料夾拿才run
+    - 6個方法檢查ods(已round 3)
+    - Step 4 Evaluation的metric要從6個方法資料夾拿才能run並檢驗
+4. step2 RTT1錄影完要補上當時的的host_ip, **程式檔案裡面也要改**
+5. excel的空白格式每個人電腦打開可能不太一樣？
+6. 上傳前先備份+ chmod 777 -R [目錄]  可以讓目錄以下 包含子目錄權限都打開
+7. 最外層的注意事項(可寫在最前面)
+8. program以外要補充的也寫在README
+    - Data
+    - Result:
+        - 放final RTT2 RTT3
+        - 放所有method的ods
+        - 放evaluation的結果(可從論文拿)
+        - 補CDF 
