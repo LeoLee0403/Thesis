@@ -39,7 +39,7 @@
 
 ### Traffic3_VPN_VPN
 - a_main.sh
-    - This script connects NordVPN by `nordvpn connect ${VP_VPN}` VP_VPN is the [first domain] in each location in lvpn_location_list_2023.txt. For example, first location's VP_VPN is pl128, and second location's VP_VPN is be148. However, sometimes NordVPN does not allow us to connect the VPN with specific domain. If this case happens unfortunately, try to make VPN = **city name**. For example, use `nordvpn connect Warsaw` to connect the VPN, and you need to modify ping_other_vpn.sh
+    - This script connects NordVPN by `nordvpn connect ${VP_VPN}` VP_VPN is the [first domain] in each location in **lvpn_location_list_2023.txt**. For example, first location's VP_VPN is pl128, and second location's VP_VPN is be148. However, sometimes NordVPN does not allow us to connect the VPN with specific domain. If this case happens unfortunately, try to make VPN = **city name**. For example, use `nordvpn connect Warsaw` to connect the VPN, and you need to modify ping_other_vpn.sh
     - The example uses 3 VP_vpn to ping 3 LM_vpn, and use tcpdump to intercept the traffic between them and save the traffic to pcapfile.
 - ldetet_and_test_example.sh
     - Choose the correct vpn_net_interface and connect the VPN, and then check the VPN connection status to determine whether it is a successful connection.
@@ -157,7 +157,7 @@
             -  Each packet's timestamp
         -  **comput_v1pingv2.py**
             -  Compute the RTT between VP_VPN and LM_VPN
-        -  **avpnping_min.txt**
+        -  avpnping_min.txt
             -  Record minumum RTT of each [VP_VPN, LM_VPN] pair
     -  comput_v1pingv2.py
         - If find the packet is VP_VPN > LM_VPN, and next packet is LM_VPN > VP_VPN, and pingseq are the same, then pair the two packets and subtract their time value to get the RTT of this pair.
@@ -191,7 +191,7 @@
         - For example, if top = 30, then use **top_ingest_rtt.py** to record the first 30 small RTT to the ingest server
     - **geoping.py**
         -  Compute Euclidean Distance between target fingerprint and the LM fingerprint, and record them in the **diff**
-    -  sort_diff.py
+    -  **sort_diff.py**
         -  Sort VPN with the Euclidean Distance between target fingerprint and the LM fingerprint from low to high
     - `xdg-open 2Geoping.ods` to get the geoping result 
 - geoping.py
@@ -215,11 +215,12 @@
         - output to nord_distance.txt
             - **nord_distance.txt** record VPN1 | VPN2 | dist(km) | lat1 | long1 | lat2 | long2
     - **generate_input.sh** 
-        - For each VPN, output the RTT and distance to all VPN
-        - output to yrtt_[VP_VPN].txt and xdist_[VP_VPN].txt 
+        - For each VP_VPN, output the RTT and distance to all LM_VPN
+        - Output RTT to yrtt_[VP_VPN].txt, and output distance to xdist_[VP_VPN].txt 
     - **predict_dist.sh** 
         - Generate bestline, and use bestline to predict target distance from target RTT
-        - for each VPN, for each ingest, call **predict_dist.py**
+        - Receive yrtt_[VP_VPN] as y and xdist_[VP_VPN] as x a to get the RTT and distance between VP_VPN and each LM_VPN, to generate LM point [x, y]
+        - For each VPN, for each ingest, call **predict_dist.py**
         - **predict_dist.py**
             - receive target RTT between a VPN and a ingest server
             - find the bestline y = mx + b, the goal is to find out m and b
@@ -244,22 +245,34 @@
         - **int_radius_vpn1_target** is the target distance, in CBG it is regarded as radius (here we only care about radius < 2000km), and each VPN's location is the center
         - **int_dist_vpn1_vpn2** is the distacne between the a VPN and the center.
         - If int_dist_vpn1_vpn2 <= int_radius_vpn1_target, then the VPN will be in the circle, so cover count++
-        - Output count_[ingest].txt it records each VPN's cover count to the ingest server.
-    - **a_generate_cover_rank.sh** # compute each VPN's cover rank according to the circle cover count
-    - **map.sh** # plot the circle covers on the map
-    - **point_for_pureCBG.sh** # for each VPN's cover rank we give cover point, if cover point is the same, compare dist point according shortest distance method
-    - **aa_generate_sorted_point_for_PureCBG.sh** # rank VPN according to total point from high to low and mark cover count
+        - **Output to count_[ingest].txt**. It records each VPN's cover count to the ingest server.
+    - **a_generate_cover_rank.sh** # 
+        - Receive each VPN's cover count of each ingest server
+        - For each ingest call **a_sort_cover_rank.py** to convert the cover count to cover rank of each VPN.
+        - Output to **a_cover_rank_[ingest].txt**
+    - **map.sh** 
+        - Plot the circle covers on the map
+    - **point_for_pureCBG.sh** 
+        - For each VPN's cover rank we give cover point according to the scaled score in **point_for_pureCBG.py**. Because the score of the dist point in scaled score (just for CBG) is very small. It can be seen as if two VPNs' cover point/count are the same, then compare their dist point/shortest distance according shortest distance method.
+        - Output to **a_point_$[ingest].txt**
+    - **aa_generate_sorted_point_for_PureCBG.sh**
+        - For each ingest, call **aa_sort_point_for_pureCBG.py** to sort the VPN according to the total point from high to low, and mark each VPN's cover count.
+        - Output to **a_sorted_count_[ingest].txt**
     - `xdg-open 4CBG.ods` to get the CBG result
 
 ### 5Hybrid1
 - a_main.sh
-    - **point1.sh** # we give a scaled score for Hybird1 method, we have each VPN's cover rank and short distance rank, then we convert them by the scaled score to cover point and short distance point, and then add the two point to get the total point of each VPN.
+    - **point1.sh** 
+        - For each VPN, we have each VPN's **cover_rank** and **dist_rank**, then we convert them by the scaled score (just for Hybrid1) to cover point and short distance point, and then add the two point to get the total point of each VPN.
+        - Output to **a_point_[ingest].txt**
     - **aa_generate_sorted_point.sh** # rank VPN according to total point from high to low
+        - For each ingest, call **aa_sort_point.py** to sort the VPN according to the total point from high to low
+        - Output to **a_sorted_point_[ingest].txt**
     - `xdg-open 5Hybrid1.ods` to get the Hybrid1 result
 ### 6Hybrid2
 - a_main.sh
-    - **point2.sh** # Hybrid2 two's procedure is the same as Hybrid1 method, the only different is the scaled score
-    - `xdg-open 5Hybrid1.ods` to get the Hybrid2 result
+    - Hybrid2's procedure is the same as Hybrid1 method, the only different is the scaled score. in **point2.py**
+    - `xdg-open 6Hybrid2.ods` to get the Hybrid2 result
 
 ## Step 4. Evaluation and Analysis
 - Rank difference 
