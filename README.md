@@ -169,24 +169,74 @@
 
 ## Step 3. Implement Geolocation Methods
 - 1shortest_ping
+    - ingest_rtt.txt
+        - RTT between each VPN and each ingest server, the RTT in (m,n) position is between VPN[m] in **avpn.txt** and ingest[n] in **aingest.txt**
     - a_main.sh
-        - shortest ping focus on mapping the ingest server to the VPN with smallest RTT. for each ingest server, it will sort VPN according to the RTT from low to high.
-        - [RUN]
-        - **xdg-open 1shortest_ping.ods** to get the shortest ping result
+        - For each ingest server, run **sort.py** to sort the VPN according to the RTT between VPN and ingest server
+        - `xdg-open 1shortest_ping.ods` to get the shortest ping result
+    - sort.py
+        - For a ingest server, receive 82 VPN with their RTT to the ingest server, and sort the VPN according to its RTT to ingest server from low to high
+    - [outputfile] aa_[ingest].txt
+        - VPN and corresponding RTT to this ingest server (from low to high)
+        
+    
 - 2geoping
+    - Geoping focus on mapping the ingest server to the VPN with most similar fingerprint, for each ingest server, it will compute the RTT between the ingest server and all VPN to form an target fingerprint, and compute the RTT between a VPN and all the VPN to form a LM fingerprint, and it will form 82 LM fingerprint.
     - a_main.sh
-        - geoping focus on mapping the ingest server to the VPN with most similar fingerprint
-        - In the script, for each ingest server, it will compute the RTT between the ingest server and all VPN to form an target fingerprint, and compute the RTT between a VPN and all the VPN to form a LM fingerprint, and it will form 82 LM fingerprint. 
+        - top
+            - For example, if top = 30, then for each RTT, we only take 30 VPN with the first 30 small RTT to the ingest server. It means Both target(ingest) fingerprint and LM(VPN) fingerprint are only care about the 30 VPN's RTT to them. But now we use all VPN, so set top = 82
+        - top_VPN
+            - For example, if top = 30, then use **top_vpn.py** to record 30 VPN with the first 30 small RTT to the ingest server
+        - top_ingest_rtt
+            - For example, if top = 30, then use **top_ingest_rtt.py** to record the first 30 small RTT to the ingest server
+        - **geoping.py**
+            -  Compute Euclidean Distance between target fingerprint and the LM fingerprint, and record them in the **diff**
+        -  sort_diff.py
+            -  Sort VPN with the Euclidean Distance between target fingerprint and the LM fingerprint from low to high
+        - `xdg-open 2Geoping.ods` to get the geoping result 
+    - geoping.py
+        - receive 
+            1. topvpn (first $top VPN)
+            2. ingetrtt (first $top ingest)
+            3. vpn (82 VPN) 
+            4. vpnrtt (RTT3 between VPN each other)
+        - Compute Euclidean Distance by $$\sqrt{\Sigma{(ingestrtt- vpnrtt)^2}}$$ and output Euclidean Distance to **diff**.
+    - sort_diff.py
+        - receive diff list and sort VPN with diff from low to high
+    - [outputfile] aa_[ingest].txt
+        - VPN and corresponding Euclidean Distance to this ingest server (from low to high)
 And we store the euclidean distance between the target fingerprint and each LM fingerprint to **diff**, and then sort the VPN according to the diff from low to high. 
-        - **xdg-open 2Geoping.ods** to get the geoping result
+       
 - 3shortest_dist
     - a_main.sh
-        - **get_distance_by_latlong.sh** # get distance betwenen VPN each other by latitude and longitude
-        - **generate_input.sh** # for each VPN, we get the RTT and distance to all VPN
-            - **predict_dist.sh** # generate bestline, and use bestline to predict target distance from target RTT
-        - **generate_dist.sh** # sort the VPN according to the predict target distance from low to high
-        - **generate_dist_rank.sh** # rank each VPN according to the predict target distance from low to high
-        - **xdg-open 3Shortest_dist.ods** to get the shortest distance result
+        - **get_distance_by_latlong.sh** 
+            - Get distance (in km) betwenen VPN each other by latitude and longitude
+            - **distance.py**
+                - Give two position's latitude and longitude, then return the geo-distance between the two position.
+            - output to nord_distance.txt
+                - **nord_distance.txt** record VPN1 | VPN2 | dist(km) | lat1 | long1 | lat2 | long2
+        - **generate_input.sh** 
+            - For each VPN, output the RTT and distance to all VPN
+            - output to yrtt_[VP_VPN].txt and xdist_[VP_VPN].txt 
+        - **predict_dist.sh** 
+            - Generate bestline, and use bestline to predict target distance from target RTT
+            - for each VPN, for each ingest, call **predict_dist.py**
+            - **predict_dist.py**
+                - receive target RTT between a VPN and a ingest server
+                - find the bestline y = mx + b, the goal is to find out m and b
+                    - for each b from 0 to 400
+                        - Find out m such that the sum of vertical distance from all points to this line y = mx + b is minimum, and all points cannot be lower than this line
+                    - In the several min_sum above, choose the bestline with the smallest min_sum, and we get m and b.
+                    - Convert target RTT by the bestline y = mx + b
+                        - predict distance = (target rtt - b) / m
+            - output the predict target distance to **predict_[ingest]_dist.txt**
+        - **generate_dist.sh** 
+            - Sort the VPN according to the predict target distance from low to high by **sort_dist.py**
+            - output to **a_sorted_[ingest].txt**
+        - **generate_dist_rank.sh** 
+            - For each ingest server, convert predict target distance of each VPN to short distance rank of each VPN. If the predict target is smaller the rank will be higher (rank 1 is highest). The conversion is done by **sort_dist_rank.py**
+            - Output to **a_rank_[ingest].txt**
+        - `xdg-open 3Shortest_dist.ods` to get the shortest distance result
         
 - 4CBG
     - a_main.sh
@@ -195,17 +245,17 @@ And we store the euclidean distance between the target fingerprint and each LM f
         - **map.sh** # plot the circle covers on the map
         - **point_for_pureCBG.sh** # for each VPN's cover rank we give cover point, if cover point is the same, compare dist point according shortest distance method
         - **aa_generate_sorted_point_for_PureCBG.sh** # rank VPN according to total point from high to low and mark cover count
-        - **xdg-open 4CBG.ods** to get the CBG result
+        - `xdg-open 4CBG.ods` to get the CBG result
 
 - 5Hybrid1
     - a_main.sh
         - **point1.sh** # we give a scaled score for Hybird1 method, we have each VPN's cover rank and short distance rank, then we convert them by the scaled score to cover point and short distance point, and then add the two point to get the total point of each VPN.
         - **aa_generate_sorted_point.sh** # rank VPN according to total point from high to low
-        - **xdg-open 5Hybrid1.ods** to get the Hybrid1 result
+        - `xdg-open 5Hybrid1.ods` to get the Hybrid1 result
 - 6Hybrid2
     - a_main.sh
         - **point2.sh** # Hybrid2 two's procedure is the same as Hybrid1 method, the only different is the scaled score
-        - **xdg-open 5Hybrid1.ods** to get the Hybrid2 result
+        - `xdg-open 5Hybrid1.ods` to get the Hybrid2 result
         
 ## Step 4. Evaluation and Analysis
 - Rank difference 
