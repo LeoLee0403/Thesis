@@ -60,17 +60,18 @@
     - The example compute the RTT of the three pcapfile we get in Traffic1_Nslab_VPN. First we convert the pcapfile to text file for easy operation.
     - If your host is in the nslab, then the host_ip should change to the nslab ip: **140.112.x.x**.
     - lping_timestamp.txt 
-        - For exapmple, time_stamp = 01:08:31.947975
+        - Each packet's timestamp. For exapmple, time_stamp = 01:08:31.947975
     - ltime_ping.txt 
         - If time_stamp is 01:08:31.947975, it will be parsed out 0831.947975
     - pingseq.txt
         - record the pingseq of each packet
     - long_ping_which.txt
-        - if the packet is host_ip > vpn_ip, then record the host ip in the file.
-    - Use rtt.py to get the minimum rtt of each Nslab_VPN pair.
+        - Each packet is IP_A > IP_B, and it records each IP_A
+    - **rtt.py** 
+        - Get the minimum rtt of each Nslab_VPN pair.
 - rtt.py
     - The parsed timestamp will be converted to useful time value (in second). And then minus the bias (first packet's time value) from their time value.
-    - If find the packet is host > vpn, and next packet is vpn > host, and pingseq is the same, then pair the two packets and subtract their time value to get the RTT of this pair.
+    - If find the packet is host > vpn, and next packet is vpn > host, and pingseq are the same, then pair the two packets and subtract their time value to get the RTT of this pair.
     - Finally output the min_RTT between each Nslab_VPN, and these RTT1 between Nslab and VPN are used to minus the overmeasured RTT2 and RTT3 to get the real RTT2 and RTT3
 - Result
 - Besides, the file RTT1_for_RTT2.txt RTT1_for_RTT3.txt are RTT1 between NSLAB and 82 VPN in my experiment for subtraction.
@@ -95,7 +96,7 @@
         -  `xdg-open RTT2_VPNs.ods` to get the RTT2
     - lcompute.sh
         - timestamp.txt
-            - All packets' timestamp
+            - Each packets' timestamp
         - seq_acktime.txt
             - If time_stamp is 05\:27:36.164483, it will be parsed out 0527.36164483
         - seq_or_ack.txt
@@ -103,7 +104,7 @@
         - tun0ip.txt
             - Get vpn_net_interface IP
         - tun0ip_or_ingestip.txt
-            - Determine this packet is VPN_ip > ingest_ip or ingest_ip > VPN_ip
+            - Determine each packet is VPN_ip > ingest_ip or ingest_ip > VPN_ip
         - **lrtt.py** receive above data to compute the RTT
         - output the minimum RTT to **THIS_minrtt_result.txt**
     - lrtt.py
@@ -137,10 +138,30 @@
         - To get the RTT of all pairs between 82 VPN each other in my experiment. First we use the script to convert the pcapfile to text file for easy operation.
 - txtfile
     - a_main.sh
-        - After the conversion, the for loop will do **compute_RTT.sh** to compute the RTT between VPN each other, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value.
+        - After the conversion, the for loop will do **compute_RTT.sh** to compute the RTT between VPN each other, but the RTT include the RTT1. So we run **a_get_adjusted_RTT.sh** to minus RTT1 from the RTT, and it will also adjust the RTT to nonnegative value. And then add the manual test result for VPN failed pair.
         -  `xdg-open RTT3_VPNs.ods` to get the RTT3
     -  compute_RTT.sh
+        -  vpn1 is VP_VPN
+        -  vpn2 is LM_VPN
+        -  vpn1ip_behost.txt
+            -  VP_VPN IP
+        -  vpn2ip.txt
+            -  LM_VPN IP
+        -  ltime_ping.txt
+            -  Parsed timestamp
+        -  long_ping_which.txt
+            -  Each packet is IP_A > IP_B, and it records each IP_A
+        -  long_beping_which.txt
+            -  Each packet is IP_A > IP_B, and it records each IP_B
+        -  lping_timestamp.txt
+            -  Each packet's timestamp
+        -  **comput_v1pingv2.py**
+            -  Compute the RTT between VP_VPN and LM_VPN
+        -  **avpnping_min.txt**
+            -  Record minumum RTT of each [VP_VPN, LM_VPN] pair
     -  comput_v1pingv2.py
+        - If find the packet is VP_VPN > LM_VPN, and next packet is LM_VPN > VP_VPN, and pingseq are the same, then pair the two packets and subtract their time value to get the RTT of this pair.
+        - Finally output minimum RTT.
     -  a_get_adjusted_RTT.sh
         - Receive RTT1_for_RTT3.txt, avpnping_min.txt (minimum RTT from **compute_RTT.sh**)
         - Run **find_min_rtt.py** to do minimum RTT - RTT1, and between each VP_VPN and all LM_VPN, output negative minimum RTT.
