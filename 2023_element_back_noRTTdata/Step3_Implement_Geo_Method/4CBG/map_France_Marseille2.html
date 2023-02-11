@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4194fc4735ad4e62aec12a12d3b2c2a2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4194fc4735ad4e62aec12a12d3b2c2a2" ></div>
+        
+</body>
+<script>    
+    
+            var map_4194fc4735ad4e62aec12a12d3b2c2a2 = L.map(
+                "map_4194fc4735ad4e62aec12a12d3b2c2a2",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: "True",
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4c17566d1acb481595f72ac8512d6f9e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 10, "maxZoom": 10, "minZoom": 3, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            var circle_83f9987d188d4732b7dee85791bc4b3f = L.circle(
+                [49.25, -123.133333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_83f9987d188d4732b7dee85791bc4b3f.bindTooltip(
+                `<div>
+                     Canada, Vancouver
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_49eaea40d8a0406d8900edb0421071f3 = L.circle(
+                [52.25, 21.0],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_49eaea40d8a0406d8900edb0421071f3.bindTooltip(
+                `<div>
+                     Poland, Warsaw
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_82cd20f0e78245e5be00d70e7eb0d724 = L.circle(
+                [55.666667, 12.583333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_82cd20f0e78245e5be00d70e7eb0d724.bindTooltip(
+                `<div>
+                     Denmark, Copenhagen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7948a9873e64494a9c19eef1e872abca = L.circle(
+                [50.833333, 4.333333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_7948a9873e64494a9c19eef1e872abca.bindTooltip(
+                `<div>
+                     Belgium, Brussels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_06884d7edc3246ef951d8c10753d1003 = L.circle(
+                [47.5, 19.083333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_06884d7edc3246ef951d8c10753d1003.bindTooltip(
+                `<div>
+                     Hungary, Budapest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9febcaa426994f70854004824b0da77e = L.circle(
+                [34.0522222, -118.2427778],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_9febcaa426994f70854004824b0da77e.bindTooltip(
+                `<div>
+                     United States, Los Angeles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ff2a29c352594de0ab9bfce8c250a61c = L.circle(
+                [48.2, 16.366667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_ff2a29c352594de0ab9bfce8c250a61c.bindTooltip(
+                `<div>
+                     Austria, Vienna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_88737af7d62b45b1b338d4f058cb01f4 = L.circle(
+                [47.366667, 8.55],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_88737af7d62b45b1b338d4f058cb01f4.bindTooltip(
+                `<div>
+                     Switzerland, Zurich
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dd56f393be7e40d890df40a2a76dc740 = L.circle(
+                [50.083333, 14.466667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_dd56f393be7e40d890df40a2a76dc740.bindTooltip(
+                `<div>
+                     Czech Republic, Prague
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d11c595499464688b700a5a0065d891a = L.circle(
+                [51.514125, -0.093689],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_d11c595499464688b700a5a0065d891a.bindTooltip(
+                `<div>
+                     United Kingdom, London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9997a4ab3bb44521b8adcae152ebd093 = L.circle(
+                [48.866667, 2.333333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_9997a4ab3bb44521b8adcae152ebd093.bindTooltip(
+                `<div>
+                     France, Paris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8ec1a7b4baeb42b9ad2041b6c14e724d = L.circle(
+                [32.7833333, -96.8],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_8ec1a7b4baeb42b9ad2041b6c14e724d.bindTooltip(
+                `<div>
+                     United States, Dallas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_91025a0cc84a406ba57a1f6538684d46 = L.circle(
+                [38.7508333, -77.4755556],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_91025a0cc84a406ba57a1f6538684d46.bindTooltip(
+                `<div>
+                     United States, Manassas
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ea1ab5e132b7477ab3a474c13986e4a7 = L.circle(
+                [42.8863889, -78.8786111],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_ea1ab5e132b7477ab3a474c13986e4a7.bindTooltip(
+                `<div>
+                     United States, Buffalo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f6454d885041415b830d043c8c5b3124 = L.circle(
+                [40.7141667, -74.0063889],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_f6454d885041415b830d043c8c5b3124.bindTooltip(
+                `<div>
+                     United States, New York
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3746208c4b9348cf97c5a810a39884a9 = L.circle(
+                [52.35, 4.916667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_3746208c4b9348cf97c5a810a39884a9.bindTooltip(
+                `<div>
+                     Netherlands, Amsterdam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ff0af1f0a98b41cd817e92749b298fd6 = L.circle(
+                [35.1666667, 33.3666667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_ff0af1f0a98b41cd817e92749b298fd6.bindTooltip(
+                `<div>
+                     Cyprus, Nicosia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d303547b367941bcbcd5524ad1af6499 = L.circle(
+                [50.116667, 8.683333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_d303547b367941bcbcd5524ad1af6499.bindTooltip(
+                `<div>
+                     Germany, Frankfurt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_612211ae4b674a9ca5b81c3bd3a2dfb7 = L.circle(
+                [32.066667, 34.766667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_612211ae4b674a9ca5b81c3bd3a2dfb7.bindTooltip(
+                `<div>
+                     Israel, Tel Aviv
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0994496b69ca4ba8b9ba52fe5b6e0688 = L.circle(
+                [43.85, 18.3833333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_0994496b69ca4ba8b9ba52fe5b6e0688.bindTooltip(
+                `<div>
+                     Bosnia and Herzegovina, Sarajevo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7c6239a07ad14464a6b92233cfaffcfe = L.circle(
+                [41.85, -87.65],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_7c6239a07ad14464a6b92233cfaffcfe.bindTooltip(
+                `<div>
+                     United States, Chicago
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1faa860e76504cba9bdd635d87994db3 = L.circle(
+                [45.8, 16.0],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_1faa860e76504cba9bdd635d87994db3.bindTooltip(
+                `<div>
+                     Croatia, Zagreb
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_893cc8e9e9724b898c0413ae3ec47a66 = L.circle(
+                [25.0391667, 121.525],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_893cc8e9e9724b898c0413ae3ec47a66.bindTooltip(
+                `<div>
+                     Taiwan, Taipei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7939ad48448d4cf19fc13c9eaabb7c34 = L.circle(
+                [35.685, 139.751389],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_7939ad48448d4cf19fc13c9eaabb7c34.bindTooltip(
+                `<div>
+                     Japan, Tokyo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6b6cb6ea31e640c4bf397539e379b9d6 = L.circle(
+                [48.15, 17.1166667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_6b6cb6ea31e640c4bf397539e379b9d6.bindTooltip(
+                `<div>
+                     Slovakia, Bratislava
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bf22388213e94ceeb8d55a5df94aabd9 = L.circle(
+                [40.408566, -3.69222],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_bf22388213e94ceeb8d55a5df94aabd9.bindTooltip(
+                `<div>
+                     Spain, Madrid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_65fe2733a76f4837b6715a8fc95a4ef0 = L.circle(
+                [45.466667, 9.2],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_65fe2733a76f4837b6715a8fc95a4ef0.bindTooltip(
+                `<div>
+                     Italy, Milan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b72ae1c704184c51b79c14351142b2b6 = L.circle(
+                [45.5, -73.583333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_b72ae1c704184c51b79c14351142b2b6.bindTooltip(
+                `<div>
+                     Canada, Montreal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a266003e299949888e8df6f952383f61 = L.circle(
+                [44.433333, 26.1],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_a266003e299949888e8df6f952383f61.bindTooltip(
+                `<div>
+                     Romania, Bucharest
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d6fe1ece6d0e4e2eb9ea2d1ef72102e5 = L.circle(
+                [42.6833333, 23.3166667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_d6fe1ece6d0e4e2eb9ea2d1ef72102e5.bindTooltip(
+                `<div>
+                     Bulgaria, Sofia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ace24b94ed4745eaa6897f18f2333013 = L.circle(
+                [21.033333, 105.85],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_ace24b94ed4745eaa6897f18f2333013.bindTooltip(
+                `<div>
+                     Vietnam, Hanoi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_045e8e6b833f4b4d8cdb374125e5124f = L.circle(
+                [-26.205171, 28.049815],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_045e8e6b833f4b4d8cdb374125e5124f.bindTooltip(
+                `<div>
+                     South Africa, Johannesburg
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_acf99844956047d1a78cf71f2516c14f = L.circle(
+                [49.6769444, 6.1238889],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_acf99844956047d1a78cf71f2516c14f.bindTooltip(
+                `<div>
+                     Luxembourg, Steinsel
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f6989621e8954bf0921bf6d98ce5b8a5 = L.circle(
+                [37.9833333, 23.7333333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_f6989621e8954bf0921bf6d98ce5b8a5.bindTooltip(
+                `<div>
+                     Greece, Athens
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a862fdce567444b88e7b40d5662d7f73 = L.circle(
+                [56.95, 24.1],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_a862fdce567444b88e7b40d5662d7f73.bindTooltip(
+                `<div>
+                     Latvia, Riga
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8122d4dfd50544a1a6a0b97d82e24ee6 = L.circle(
+                [38.716667, -9.133333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_8122d4dfd50544a1a6a0b97d82e24ee6.bindTooltip(
+                `<div>
+                     Portugal, Lisbon
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5e61aba2d0e24be59557173558b7a095 = L.circle(
+                [1.2930556, 103.8558333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_5e61aba2d0e24be59557173558b7a095.bindTooltip(
+                `<div>
+                     Singapore, Singapore
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d7a14dc46a74471a719faab0d1e2f66 = L.circle(
+                [59.333333, 18.05],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_9d7a14dc46a74471a719faab0d1e2f66.bindTooltip(
+                `<div>
+                     Sweden, Stockholm
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9d2e5ef8678446f9c93a62ec9d54e8d = L.circle(
+                [46.0552778, 14.5144444],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_b9d2e5ef8678446f9c93a62ec9d54e8d.bindTooltip(
+                `<div>
+                     Slovenia, Ljubljana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_139ecc6d1900497592ab5251f97b17f1 = L.circle(
+                [39.7391667, -104.9841667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_139ecc6d1900497592ab5251f97b17f1.bindTooltip(
+                `<div>
+                     United States, Denver
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_056b3879ed7745c3a1b746961669f234 = L.circle(
+                [47.6063889, -122.3308333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_056b3879ed7745c3a1b746961669f234.bindTooltip(
+                `<div>
+                     United States, Seattle
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_923218a31d2144dfb3afb9d5066b630c = L.circle(
+                [33.7488889, -84.3880556],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_923218a31d2144dfb3afb9d5066b630c.bindTooltip(
+                `<div>
+                     United States, Atlanta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7866eb85b0a646cb944ac53ca5058529 = L.circle(
+                [-23.533333, -46.616667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_7866eb85b0a646cb944ac53ca5058529.bindTooltip(
+                `<div>
+                     Brazil, San Paulo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9c6d129adc894022b8f9d5dfd9a145dc = L.circle(
+                [53.3330556, -6.2488889],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_9c6d129adc894022b8f9d5dfd9a145dc.bindTooltip(
+                `<div>
+                     Ireland, Dublin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_737a31f908e64113a76370a17ce1410d = L.circle(
+                [52.516667, 13.4],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_737a31f908e64113a76370a17ce1410d.bindTooltip(
+                `<div>
+                     Germany, Berlin
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_01e6b78094ff409eaf5f28acf4464393 = L.circle(
+                [25.7738889, -80.1938889],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_01e6b78094ff409eaf5f28acf4464393.bindTooltip(
+                `<div>
+                     United States, Miami
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f34715d8b44348238bb1cfb26008f017 = L.circle(
+                [-34.5875, -58.6725],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_f34715d8b44348238bb1cfb26008f017.bindTooltip(
+                `<div>
+                     Argentina, Buenos Aires
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_186a02486fe24ccab21065f90fb66bd4 = L.circle(
+                [44.818611, 20.468056],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_186a02486fe24ccab21065f90fb66bd4.bindTooltip(
+                `<div>
+                     Serbia, Belgrade
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3b96676fef9e479ab872aafb86aa8a17 = L.circle(
+                [47.005556, 28.8575],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_3b96676fef9e479ab872aafb86aa8a17.bindTooltip(
+                `<div>
+                     Moldova, Chisinau
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8906a43901b04b2fa39a7ad4cad587ef = L.circle(
+                [59.916667, 10.75],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_8906a43901b04b2fa39a7ad4cad587ef.bindTooltip(
+                `<div>
+                     Norway, Oslo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f0126c9c52fb4d6ab36aaee2684517d5 = L.circle(
+                [-33.861481, 151.205475],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_f0126c9c52fb4d6ab36aaee2684517d5.bindTooltip(
+                `<div>
+                     Australia, Sydney
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2c7136eebe614f81b1301b6fef9c0eae = L.circle(
+                [41.3275, 19.8188889],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_2c7136eebe614f81b1301b6fef9c0eae.bindTooltip(
+                `<div>
+                     Albania, Tirana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_64a0b11f8f5249fa80881d054fa7fbd8 = L.circle(
+                [43.666667, -79.416667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_64a0b11f8f5249fa80881d054fa7fbd8.bindTooltip(
+                `<div>
+                     Canada, Toronto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_64084fb447284a9aa9812ace89fc923a = L.circle(
+                [-36.866667, 174.766667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_64084fb447284a9aa9812ace89fc923a.bindTooltip(
+                `<div>
+                     New Zealand, Auckland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_8369842b4b024a7d9a0cbf1759bde6b8 = L.circle(
+                [22.2833333, 114.15],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_8369842b4b024a7d9a0cbf1759bde6b8.bindTooltip(
+                `<div>
+                     Hong Kong, Hong Kong
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_956c0d4b77ab4f67be91226de2127f77 = L.circle(
+                [-37.813938, 144.963425],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_956c0d4b77ab4f67be91226de2127f77.bindTooltip(
+                `<div>
+                     Australia, Melbourne
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_82d200e9581441a6b83619716cb6f902 = L.circle(
+                [-27.47101, 153.024292],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_82d200e9581441a6b83619716cb6f902.bindTooltip(
+                `<div>
+                     Australia, Brisbane
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_80954869ec9642d09e12b2da32f7c927 = L.circle(
+                [-31.95224, 115.861397],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_80954869ec9642d09e12b2da32f7c927.bindTooltip(
+                `<div>
+                     Australia, Perth
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_44ee2b37f7564b398d79bf6644919e4a = L.circle(
+                [-33.45, -70.666667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_44ee2b37f7564b398d79bf6644919e4a.bindTooltip(
+                `<div>
+                     Chile, Santiago
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5631d1d7e3a54856aec6301b5fffcc97 = L.circle(
+                [41.725, 44.7908333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_5631d1d7e3a54856aec6301b5fffcc97.bindTooltip(
+                `<div>
+                     Georgia, Tbilisi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_55be12ee32274b18a4d72ce0a994d2fe = L.circle(
+                [-34.928661, 138.598633],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_55be12ee32274b18a4d72ce0a994d2fe.bindTooltip(
+                `<div>
+                     Australia, Adelaide
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ca44d03dbbd34a229aa002ba2facb5d6 = L.circle(
+                [64.15, -21.95],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_ca44d03dbbd34a229aa002ba2facb5d6.bindTooltip(
+                `<div>
+                     Iceland, Reykjavik
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4c26477a04724f499c3cef42f6043ab4 = L.circle(
+                [37.5985, 126.9783],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_4c26477a04724f499c3cef42f6043ab4.bindTooltip(
+                `<div>
+                     South Korea, Seoul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_97664ff7493b45bbb4c21293848ccf5c = L.circle(
+                [42.0, 21.4333333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_97664ff7493b45bbb4c21293848ccf5c.bindTooltip(
+                `<div>
+                     North Macedonia, Skopje
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_06e2bb79f25a4685b06697e755884662 = L.circle(
+                [19.434167, -99.138611],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_06e2bb79f25a4685b06697e755884662.bindTooltip(
+                `<div>
+                     Mexico, Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f80850b0d47c4d74a7fd85765223e916 = L.circle(
+                [13.753979, 100.501444],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_f80850b0d47c4d74a7fd85765223e916.bindTooltip(
+                `<div>
+                     Thailand, Bangkok
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c09ca3ba78044e79a880987333c7db97 = L.circle(
+                [25.258172, 55.304717],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_c09ca3ba78044e79a880987333c7db97.bindTooltip(
+                `<div>
+                     United Arab Emirates, Dubai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_5115c05d727841f6b019b255f3858f51 = L.circle(
+                [60.175556, 24.934167],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_5115c05d727841f6b019b255f3858f51.bindTooltip(
+                `<div>
+                     Finland, Helsinki
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e421ad4f8d634d08882c1fdcb955fafa = L.circle(
+                [3.166667, 101.7],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_e421ad4f8d634d08882c1fdcb955fafa.bindTooltip(
+                `<div>
+                     Malaysia, Kuala Lumpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c9f1b734f81b4a559c7ec231f531696a = L.circle(
+                [-6.174444, 106.829444],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_c9f1b734f81b4a559c7ec231f531696a.bindTooltip(
+                `<div>
+                     Indonesia, Jakarta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3e5c23bca1374afca19f7fdd543018e0 = L.circle(
+                [35.2269444, -80.8433333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_3e5c23bca1374afca19f7fdd543018e0.bindTooltip(
+                `<div>
+                     United States, Charlotte
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dea920cb94a04d15a56982927fef9b22 = L.circle(
+                [37.7698135, -122.4660005],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_dea920cb94a04d15a56982927fef9b22.bindTooltip(
+                `<div>
+                     United States, San Francisco
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1d3f068222964ea08b4120db3d1a0a91 = L.circle(
+                [33.4483333, -112.0733333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_1d3f068222964ea08b4120db3d1a0a91.bindTooltip(
+                `<div>
+                     United States, Phoenix
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e7362dd1293c43f6b48485ab0fe46460 = L.circle(
+                [43.285413, 5.37606],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_e7362dd1293c43f6b48485ab0fe46460.bindTooltip(
+                `<div>
+                     France, Marseille
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7fc4df766087479b9da859278580919b = L.circle(
+                [41.018611, 28.964722],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_7fc4df766087479b9da859278580919b.bindTooltip(
+                `<div>
+                     Turkey, Istanbul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_689f8f369b52431d9408e8baac86bb60 = L.circle(
+                [50.433333, 30.516667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_689f8f369b52431d9408e8baac86bb60.bindTooltip(
+                `<div>
+                     Ukraine, Kiev
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9327e2ceb8e4437dbaf62f95937ef76c = L.circle(
+                [54.6833333, 25.3166667],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_9327e2ceb8e4437dbaf62f95937ef76c.bindTooltip(
+                `<div>
+                     Lithuania, Vilnius
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_382323b2f12a46609645403d053dab9e = L.circle(
+                [18.975, 72.825833],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_382323b2f12a46609645403d053dab9e.bindTooltip(
+                `<div>
+                     India, Mumbai
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c505b58c14cb414a8b404a8dfe05f486 = L.circle(
+                [38.6272222, -90.1977778],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_c505b58c14cb414a8b404a8dfe05f486.bindTooltip(
+                `<div>
+                     United States, Saint Louis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0fe632b8e84c4871865083ba0c6be24e = L.circle(
+                [9.893385, -84.105407],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_0fe632b8e84c4871865083ba0c6be24e.bindTooltip(
+                `<div>
+                     Costa Rica, San Jose
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2c0ecf4d07094585bb010b820b338c39 = L.circle(
+                [59.4338889, 24.7280556],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_2c0ecf4d07094585bb010b820b338c39.bindTooltip(
+                `<div>
+                     Estonia, Tallinn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_53df58a6af3b45a5a806ba41292aa32a = L.circle(
+                [40.7608333, -111.8902778],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_53df58a6af3b45a5a806ba41292aa32a.bindTooltip(
+                `<div>
+                     United States, Salt Lake City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f8f0309d86d145638897e4fdca0c1358 = L.circle(
+                [39.0997222, -94.5783333],
+                {"bubblingMouseEvents": true, "color": "#d2691e", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2691e", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_f8f0309d86d145638897e4fdca0c1358.bindTooltip(
+                `<div>
+                     United States, Kansas City
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b9dea28a8143400590545f62513d685a = L.circle(
+                [50.833333, 4.333333],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1939591.973144349, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_b9dea28a8143400590545f62513d685a.bindTooltip(
+                `<div>
+                     Brussels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e8b5f74c90804cd1954ea7c25fdff9cb = L.circle(
+                [42.6833333, 23.3166667],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1327618.622578355, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_e8b5f74c90804cd1954ea7c25fdff9cb.bindTooltip(
+                `<div>
+                     Sofia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_a9b87c6a5d274eadb0d2c164918c4cd8 = L.circle(
+                [47.366667, 8.55],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 828774.0122736724, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_a9b87c6a5d274eadb0d2c164918c4cd8.bindTooltip(
+                `<div>
+                     Zurich
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_062a7482b4e049eb9867794a9265a912 = L.circle(
+                [35.1666667, 33.3666667],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1020489.8181874066, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_062a7482b4e049eb9867794a9265a912.bindTooltip(
+                `<div>
+                     Nicosia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_18ff446e5f7c49f5a1d7ee9fa1d88225 = L.circle(
+                [40.408566, -3.69222],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1137617.1763517817, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_18ff446e5f7c49f5a1d7ee9fa1d88225.bindTooltip(
+                `<div>
+                     Madrid
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_635fbe1879544cc893e94c503993062f = L.circle(
+                [48.866667, 2.333333],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 917147.8456360662, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_635fbe1879544cc893e94c503993062f.bindTooltip(
+                `<div>
+                     Paris
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_884b6cae92b54649b3a0fd697b40f933 = L.circle(
+                [43.285413, 5.37606],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7831.525716947236, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_884b6cae92b54649b3a0fd697b40f933.bindTooltip(
+                `<div>
+                     Marseille
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1b9c30ce007841dfb2b2cc0c79ca306b = L.circle(
+                [45.466667, 9.2],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1314853.572823116, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_1b9c30ce007841dfb2b2cc0c79ca306b.bindTooltip(
+                `<div>
+                     Milan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_bf8e1810c7244dfb8a0b40bc01b8fd30 = L.circle(
+                [52.35, 4.916667],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1941028.47700358, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_bf8e1810c7244dfb8a0b40bc01b8fd30.bindTooltip(
+                `<div>
+                     Amsterdam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_00ea9840683049a1aaa1b529c4e8df0e = L.circle(
+                [44.818611, 20.468056],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1086963.5385534966, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_00ea9840683049a1aaa1b529c4e8df0e.bindTooltip(
+                `<div>
+                     Belgrade
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_33080e3a6e8249d7bf1958fe3e0bd5dc = L.circle(
+                [48.15, 17.1166667],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 0.055, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1377888.6356166708, "stroke": true, "weight": 3}
+            ).addTo(map_4194fc4735ad4e62aec12a12d3b2c2a2);
+        
+    
+            circle_33080e3a6e8249d7bf1958fe3e0bd5dc.bindTooltip(
+                `<div>
+                     Bratislava
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

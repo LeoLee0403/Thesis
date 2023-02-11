@@ -1,0 +1,23 @@
+echo -n "" > excel.txt
+
+for ((i=1;i<=60;i++))
+do
+    ingest=$(cat aingest.txt | head -n $i | tail -n 1)
+    echo -n "	$ingest" >> excel.txt 
+    echo -n "	" >> excel.txt 
+done
+echo "" >> excel.txt
+
+for ((j=1;j<=82;j++))
+do
+    for ((i=1;i<=60;i++))
+    do
+        ingest=$(cat aingest.txt | head -n $i | tail -n 1)
+        line=$(cat aa_$ingest.txt | head -n $j | tail -n 1)
+        echo -n "$line	" >> excel.txt 
+    done
+    echo "" >> excel.txt
+    
+done
+
+cat excel.txt > 1shortest_ping.ods

@@ -1,0 +1,1 @@
+ls | xargs perl -pi -e 's/	/|/'
