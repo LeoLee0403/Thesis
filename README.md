@@ -274,7 +274,7 @@ Video Link: https://www.youtube.com/watch?v=cNXmdlD2PuM
     - `xdg-open 5Hybrid1.ods` to get the Hybrid1 result
 ### 6Hybrid2
 - a_main.sh
-    - Hybrid2's procedure is the same as Hybrid1 method, the only different is the scaled score. in **point2.py**
+    - Hybrid2's procedure is the same as Hybrid1 method, the only different is the scaled score in **point2.py**
     - `xdg-open 6Hybrid2.ods` to get the Hybrid2 result
 
 ## Step 4. Evaluation and Analysis
