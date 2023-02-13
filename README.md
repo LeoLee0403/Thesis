@@ -1,9 +1,7 @@
 # README
+# Experiment Instruction of Program
 
-# Experiment Instruction in YouTube
-Video Link: https://www.youtube.com/watch?v=cNXmdlD2PuM
-
-# Experiment Instruction in Program
+YouTube Link: https://www.youtube.com/watch?v=cNXmdlD2PuM
 
 ## Step 1. Packet Collection
 
