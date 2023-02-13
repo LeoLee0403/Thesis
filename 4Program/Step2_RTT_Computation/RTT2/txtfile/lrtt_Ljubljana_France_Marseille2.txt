@@ -1,0 +1,703 @@
+02:44:58.788663 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 1036267711:1036269025, ack 2578950797, win 501, options [nop,nop,TS val 1574862991 ecr 3376926848], length 1314
+02:44:58.790186 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294956635, win 132, options [nop,nop,TS val 3376926946 ecr 1574862511], length 0
+02:44:58.810694 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 1314:2628, ack 1, win 501, options [nop,nop,TS val 1574863013 ecr 3376926946], length 1314
+02:44:58.843893 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 2628:3942, ack 1, win 501, options [nop,nop,TS val 1574863047 ecr 3376926946], length 1314
+02:44:58.870882 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294959263, win 132, options [nop,nop,TS val 3376927021 ecr 1574862606], length 0
+02:44:58.906548 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 3942:5256, ack 1, win 501, options [nop,nop,TS val 1574863109 ecr 3376927021], length 1314
+02:44:58.938095 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 5256:6570, ack 1, win 501, options [nop,nop,TS val 1574863141 ecr 3376927021], length 1314
+02:44:58.977504 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 6570:7884, ack 1, win 501, options [nop,nop,TS val 1574863180 ecr 3376927021], length 1314
+02:44:58.991905 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294961891, win 132, options [nop,nop,TS val 3376927125 ecr 1574862713], length 0
+02:44:59.044018 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 7884:9198, ack 1, win 501, options [nop,nop,TS val 1574863247 ecr 3376927125], length 1314
+02:44:59.047796 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294963354, win 133, options [nop,nop,TS val 3376927178 ecr 1574862778], length 0
+02:44:59.047834 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 9198:10003, ack 1, win 501, options [nop,nop,TS val 1574863251 ecr 3376927178], length 805
+02:44:59.108961 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 10003:11317, ack 1, win 501, options [nop,nop,TS val 1574863312 ecr 3376927178], length 1314
+02:44:59.142530 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 11317:12631, ack 1, win 501, options [nop,nop,TS val 1574863345 ecr 3376927178], length 1314
+02:44:59.173243 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 12631:13945, ack 1, win 501, options [nop,nop,TS val 1574863376 ecr 3376927178], length 1314
+02:44:59.236881 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 13945:15259, ack 1, win 501, options [nop,nop,TS val 1574863440 ecr 3376927178], length 1314
+02:44:59.256585 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927391 ecr 1574862842,nop,nop,sack 1 {0:1314}], length 0
+02:44:59.277738 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 15259:16573, ack 1, win 501, options [nop,nop,TS val 1574863480 ecr 3376927391], length 1314
+02:44:59.286135 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927419 ecr 1574862842,nop,nop,sack 1 {0:2628}], length 0
+02:44:59.286187 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 4294965982:0, ack 1, win 501, options [nop,nop,TS val 1574863489 ecr 3376927419], length 1314
+02:44:59.319933 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927457 ecr 1574862842,nop,nop,sack 1 {0:3942}], length 0
+02:44:59.319950 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 16573:17887, ack 1, win 501, options [nop,nop,TS val 1574863523 ecr 3376927457], length 1314
+02:44:59.400464 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927537 ecr 1574862842,nop,nop,sack 1 {0:5256}], length 0
+02:44:59.400508 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 17887:19201, ack 1, win 501, options [nop,nop,TS val 1574863603 ecr 3376927537], length 1314
+02:44:59.417903 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927567 ecr 1574862842,nop,nop,sack 1 {0:6570}], length 0
+02:44:59.417925 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 19201:20515, ack 1, win 501, options [nop,nop,TS val 1574863621 ecr 3376927567], length 1314
+02:44:59.454569 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927604 ecr 1574862842,nop,nop,sack 1 {0:7884}], length 0
+02:44:59.454585 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 20515:21829, ack 1, win 501, options [nop,nop,TS val 1574863657 ecr 3376927604], length 1314
+02:44:59.530612 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927668 ecr 1574862842,nop,nop,sack 1 {0:9198}], length 0
+02:44:59.530659 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 21829:23143, ack 1, win 501, options [nop,nop,TS val 1574863733 ecr 3376927668], length 1314
+02:44:59.530689 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927670 ecr 1574862842,nop,nop,sack 1 {0:10003}], length 0
+02:44:59.544431 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 23143:24457, ack 1, win 501, options [nop,nop,TS val 1574863747 ecr 3376927670], length 1314
+02:44:59.595811 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927741 ecr 1574862842,nop,nop,sack 1 {0:11317}], length 0
+02:44:59.595847 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 24457:25771, ack 1, win 501, options [nop,nop,TS val 1574863799 ecr 3376927741], length 1314
+02:44:59.629582 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927766 ecr 1574862842,nop,nop,sack 1 {0:12631}], length 0
+02:44:59.642453 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 25771:27085, ack 1, win 501, options [nop,nop,TS val 1574863845 ecr 3376927766], length 1314
+02:44:59.647995 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927785 ecr 1574862842,nop,nop,sack 1 {0:13945}], length 0
+02:44:59.677492 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 27085:28399, ack 1, win 501, options [nop,nop,TS val 1574863880 ecr 3376927785], length 1314
+02:44:59.733406 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927863 ecr 1574862842,nop,nop,sack 1 {0:15259}], length 0
+02:44:59.733435 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 28399:29713, ack 1, win 501, options [nop,nop,TS val 1574863936 ecr 3376927863], length 1314
+02:44:59.755736 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 4294965982, win 133, options [nop,nop,TS val 3376927909 ecr 1574862842,nop,nop,sack 1 {0:16573}], length 0
+02:44:59.757116 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 16573, win 110, options [nop,nop,TS val 3376927912 ecr 1574863489], length 0
+02:44:59.757130 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 29713:30928, ack 1, win 501, options [nop,nop,TS val 1574863960 ecr 3376927912], length 1215
+02:44:59.796342 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 17887, win 139, options [nop,nop,TS val 3376927942 ecr 1574863523], length 0
+02:44:59.806994 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 30928:32242, ack 1, win 501, options [nop,nop,TS val 1574864010 ecr 3376927942], length 1314
+02:44:59.840041 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 32242:33556, ack 1, win 501, options [nop,nop,TS val 1574864043 ecr 3376927942], length 1314
+02:44:59.876696 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 33556:34870, ack 1, win 501, options [nop,nop,TS val 1574864079 ecr 3376927942], length 1314
+02:44:59.878933 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 19201, win 145, options [nop,nop,TS val 3376928016 ecr 1574863603], length 0
+02:44:59.898325 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 20515, win 151, options [nop,nop,TS val 3376928035 ecr 1574863621], length 0
+02:44:59.940123 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 34870:36184, ack 1, win 501, options [nop,nop,TS val 1574864143 ecr 3376928035], length 1314
+02:44:59.946268 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 21829, win 156, options [nop,nop,TS val 3376928079 ecr 1574863657], length 0
+02:44:59.982448 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 36184:37498, ack 1, win 501, options [nop,nop,TS val 1574864185 ecr 3376928079], length 1314
+02:45:00.019037 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 23143, win 162, options [nop,nop,TS val 3376928139 ecr 1574863733], length 0
+02:45:00.024858 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 37498:38812, ack 1, win 501, options [nop,nop,TS val 1574864228 ecr 3376928139], length 1314
+02:45:00.036131 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 24457, win 168, options [nop,nop,TS val 3376928158 ecr 1574863747], length 0
+02:45:00.089178 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 38812:40126, ack 1, win 501, options [nop,nop,TS val 1574864292 ecr 3376928158], length 1314
+02:45:00.096874 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 25771, win 173, options [nop,nop,TS val 3376928215 ecr 1574863799], length 0
+02:45:00.110787 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 40126:41440, ack 1, win 501, options [nop,nop,TS val 1574864313 ecr 3376928215], length 1314
+02:45:00.127037 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 27085, win 179, options [nop,nop,TS val 3376928262 ecr 1574863845], length 0
+02:45:00.150041 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 28399, win 185, options [nop,nop,TS val 3376928284 ecr 1574863880], length 0
+02:45:00.153845 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 41440:42754, ack 1, win 501, options [nop,nop,TS val 1574864357 ecr 3376928284], length 1314
+02:45:00.218371 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 42754:44068, ack 1, win 501, options [nop,nop,TS val 1574864421 ecr 3376928284], length 1314
+02:45:00.231409 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 29713, win 190, options [nop,nop,TS val 3376928345 ecr 1574863936], length 0
+02:45:00.240120 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 44068:45382, ack 1, win 501, options [nop,nop,TS val 1574864443 ecr 3376928345], length 1314
+02:45:00.268980 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 30928, win 196, options [nop,nop,TS val 3376928388 ecr 1574863960], length 0
+02:45:00.269003 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 45382:45922, ack 1, win 501, options [nop,nop,TS val 1574864472 ecr 3376928388], length 540
+02:45:00.304195 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 45922:47236, ack 1, win 501, options [nop,nop,TS val 1574864507 ecr 3376928388], length 1314
+02:45:00.312072 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 32242, win 202, options [nop,nop,TS val 3376928427 ecr 1574864010], length 0
+02:45:00.344316 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 47236:48550, ack 1, win 501, options [nop,nop,TS val 1574864547 ecr 3376928427], length 1314
+02:45:00.348955 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 33556, win 207, options [nop,nop,TS val 3376928469 ecr 1574864043], length 0
+02:45:00.367624 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 34870, win 213, options [nop,nop,TS val 3376928498 ecr 1574864079], length 0
+02:45:00.390138 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 48550:49864, ack 1, win 501, options [nop,nop,TS val 1574864593 ecr 3376928498], length 1314
+02:45:00.436929 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 36184, win 219, options [nop,nop,TS val 3376928568 ecr 1574864143], length 0
+02:45:00.441869 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 49864:51178, ack 1, win 501, options [nop,nop,TS val 1574864645 ecr 3376928568], length 1314
+02:45:00.475503 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 51178:52492, ack 1, win 501, options [nop,nop,TS val 1574864678 ecr 3376928568], length 1314
+02:45:00.488258 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 37498, win 224, options [nop,nop,TS val 3376928611 ecr 1574864185], length 0
+02:45:00.518228 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 52492:53806, ack 1, win 501, options [nop,nop,TS val 1574864721 ecr 3376928611], length 1314
+02:45:00.521652 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 38812, win 230, options [nop,nop,TS val 3376928655 ecr 1574864228], length 0
+02:45:00.574326 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 53806:55120, ack 1, win 501, options [nop,nop,TS val 1574864777 ecr 3376928655], length 1314
+02:45:00.578363 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 40126, win 236, options [nop,nop,TS val 3376928719 ecr 1574864292], length 0
+02:45:00.608187 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 55120:56434, ack 1, win 501, options [nop,nop,TS val 1574864811 ecr 3376928719], length 1314
+02:45:00.617779 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 41440, win 241, options [nop,nop,TS val 3376928757 ecr 1574864313], length 0
+02:45:00.645855 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 56434:57748, ack 1, win 501, options [nop,nop,TS val 1574864849 ecr 3376928757], length 1314
+02:45:00.655995 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 42754, win 247, options [nop,nop,TS val 3376928797 ecr 1574864357], length 0
+02:45:00.700961 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 44068, win 253, options [nop,nop,TS val 3376928844 ecr 1574864421], length 0
+02:45:00.709898 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 57748:59062, ack 1, win 501, options [nop,nop,TS val 1574864913 ecr 3376928844], length 1314
+02:45:00.720974 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 45382, win 258, options [nop,nop,TS val 3376928877 ecr 1574864443], length 0
+02:45:00.745364 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 59062:60376, ack 1, win 501, options [nop,nop,TS val 1574864948 ecr 3376928877], length 1314
+02:45:00.745774 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 45922, win 263, options [nop,nop,TS val 3376928884 ecr 1574864472], length 0
+02:45:00.745806 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 60376:60713, ack 1, win 501, options [nop,nop,TS val 1574864949 ecr 3376928884], length 337
+02:45:00.783593 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 47236, win 269, options [nop,nop,TS val 3376928922 ecr 1574864507], length 0
+02:45:00.808344 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 60713:62027, ack 1, win 501, options [nop,nop,TS val 1574865011 ecr 3376928922], length 1314
+02:45:00.814913 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 48550, win 275, options [nop,nop,TS val 3376928965 ecr 1574864547], length 0
+02:45:00.838415 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 62027:63341, ack 1, win 501, options [nop,nop,TS val 1574865041 ecr 3376928965], length 1314
+02:45:00.869828 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 49864, win 280, options [nop,nop,TS val 3376929024 ecr 1574864593], length 0
+02:45:00.874752 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 63341:64655, ack 1, win 501, options [nop,nop,TS val 1574865077 ecr 3376929024], length 1314
+02:45:00.907669 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 51178, win 286, options [nop,nop,TS val 3376929062 ecr 1574864645], length 0
+02:45:00.939777 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 64655:65969, ack 1, win 501, options [nop,nop,TS val 1574865142 ecr 3376929062], length 1314
+02:45:00.944727 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 52492, win 291, options [nop,nop,TS val 3376929087 ecr 1574864678], length 0
+02:45:00.974713 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 65969:67283, ack 1, win 501, options [nop,nop,TS val 1574865177 ecr 3376929087], length 1314
+02:45:01.008455 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 67283:68597, ack 1, win 501, options [nop,nop,TS val 1574865211 ecr 3376929087], length 1314
+02:45:01.033901 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 53806, win 291, options [nop,nop,TS val 3376929170 ecr 1574864721], length 0
+02:45:01.072401 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 68597:69911, ack 1, win 501, options [nop,nop,TS val 1574865275 ecr 3376929170], length 1314
+02:45:01.086750 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 56434, win 291, options [nop,nop,TS val 3376929218 ecr 1574864777], length 0
+02:45:01.107894 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 69911:71225, ack 1, win 501, options [nop,nop,TS val 1574865311 ecr 3376929218], length 1314
+02:45:01.142809 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 71225:72539, ack 1, win 501, options [nop,nop,TS val 1574865345 ecr 3376929218], length 1314
+02:45:01.166736 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 57748, win 291, options [nop,nop,TS val 3376929302 ecr 1574864849], length 0
+02:45:01.206413 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 72539:73853, ack 1, win 501, options [nop,nop,TS val 1574865409 ecr 3376929302], length 1314
+02:45:01.213905 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 60376, win 291, options [nop,nop,TS val 3376929355 ecr 1574864913], length 0
+02:45:01.213926 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 60713, win 292, options [nop,nop,TS val 3376929355 ecr 1574864949], length 0
+02:45:01.213936 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 73853:74664, ack 1, win 501, options [nop,nop,TS val 1574865417 ecr 3376929355], length 811
+02:45:01.234540 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 63341, win 292, options [nop,nop,TS val 3376929436 ecr 1574865011], length 0
+02:45:01.277033 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 74664:75978, ack 1, win 501, options [nop,nop,TS val 1574865480 ecr 3376929436], length 1314
+02:45:01.306580 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 75978:77292, ack 1, win 501, options [nop,nop,TS val 1574865509 ecr 3376929436], length 1314
+02:45:01.308689 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 64655, win 292, options [nop,nop,TS val 3376929534 ecr 1574865077], length 0
+02:45:01.339918 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 77292:78606, ack 1, win 501, options [nop,nop,TS val 1574865543 ecr 3376929534], length 1314
+02:45:01.377197 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 67283, win 292, options [nop,nop,TS val 3376929602 ecr 1574865142], length 0
+02:45:01.410800 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 78606:79920, ack 1, win 501, options [nop,nop,TS val 1574865613 ecr 3376929602], length 1314
+02:45:01.444147 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 79920:81234, ack 1, win 501, options [nop,nop,TS val 1574865647 ecr 3376929602], length 1314
+02:45:01.459644 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 69911, win 291, options [nop,nop,TS val 3376929685 ecr 1574865211], length 0
+02:45:01.473893 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 81234:82548, ack 1, win 501, options [nop,nop,TS val 1574865677 ecr 3376929685], length 1314
+02:45:01.527637 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 72539, win 291, options [nop,nop,TS val 3376929753 ecr 1574865311], length 0
+02:45:01.538284 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 74664, win 292, options [nop,nop,TS val 3376929764 ecr 1574865409], length 0
+02:45:01.538327 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 82548:83709, ack 1, win 501, options [nop,nop,TS val 1574865741 ecr 3376929764], length 1161
+02:45:01.577339 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 83709:85023, ack 1, win 501, options [nop,nop,TS val 1574865780 ecr 3376929764], length 1314
+02:45:01.606233 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 85023:86337, ack 1, win 501, options [nop,nop,TS val 1574865809 ecr 3376929764], length 1314
+02:45:01.610620 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 77292, win 292, options [nop,nop,TS val 3376929836 ecr 1574865480], length 0
+02:45:01.648684 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 86337:87651, ack 1, win 501, options [nop,nop,TS val 1574865851 ecr 3376929836], length 1314
+02:45:01.706643 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 87651:88965, ack 1, win 501, options [nop,nop,TS val 1574865909 ecr 3376929836], length 1314
+02:45:01.741122 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 88965:90279, ack 1, win 501, options [nop,nop,TS val 1574865944 ecr 3376929836], length 1314
+02:45:01.756006 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 78606, win 292, options [nop,nop,TS val 3376929930 ecr 1574865543], length 0
+02:45:01.776967 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 90279:91593, ack 1, win 501, options [nop,nop,TS val 1574865980 ecr 3376929930], length 1314
+02:45:01.820646 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 81234, win 292, options [nop,nop,TS val 3376929974 ecr 1574865613], length 0
+02:45:01.840745 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 91593:92907, ack 1, win 501, options [nop,nop,TS val 1574866043 ecr 3376929974], length 1314
+02:45:01.843031 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 83709, win 291, options [nop,nop,TS val 3376930068 ecr 1574865677], length 0
+02:45:01.843068 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 92907:93518, ack 1, win 501, options [nop,nop,TS val 1574866046 ecr 3376930068], length 611
+02:45:01.904985 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 93518:94832, ack 1, win 501, options [nop,nop,TS val 1574866108 ecr 3376930068], length 1314
+02:45:01.913362 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 86337, win 291, options [nop,nop,TS val 3376930136 ecr 1574865780], length 0
+02:45:01.942860 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 94832:96146, ack 1, win 501, options [nop,nop,TS val 1574866146 ecr 3376930136], length 1314
+02:45:01.976715 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 96146:97460, ack 1, win 501, options [nop,nop,TS val 1574866179 ecr 3376930136], length 1314
+02:45:02.043126 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 97460:98774, ack 1, win 501, options [nop,nop,TS val 1574866246 ecr 3376930136], length 1314
+02:45:02.076118 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 98774:100088, ack 1, win 501, options [nop,nop,TS val 1574866279 ecr 3376930136], length 1314
+02:45:02.085583 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 88965, win 291, options [nop,nop,TS val 3376930295 ecr 1574865851], length 0
+02:45:02.109757 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 100088:101402, ack 1, win 501, options [nop,nop,TS val 1574866312 ecr 3376930295], length 1314
+02:45:02.142453 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 91593, win 291, options [nop,nop,TS val 3376930351 ecr 1574865944], length 0
+02:45:02.169931 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 93518, win 292, options [nop,nop,TS val 3376930374 ecr 1574866043], length 0
+02:45:02.169957 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 101402:102653, ack 1, win 501, options [nop,nop,TS val 1574866373 ecr 3376930374], length 1251
+02:45:02.208568 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 102653:103967, ack 1, win 501, options [nop,nop,TS val 1574866411 ecr 3376930374], length 1314
+02:45:02.244086 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 103967:105281, ack 1, win 501, options [nop,nop,TS val 1574866447 ecr 3376930374], length 1314
+02:45:02.253029 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 96146, win 291, options [nop,nop,TS val 3376930474 ecr 1574866108], length 0
+02:45:02.289590 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 105281:106595, ack 1, win 501, options [nop,nop,TS val 1574866492 ecr 3376930474], length 1314
+02:45:02.340258 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 106595:107909, ack 1, win 501, options [nop,nop,TS val 1574866543 ecr 3376930474], length 1314
+02:45:02.362437 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 97460, win 292, options [nop,nop,TS val 3376930586 ecr 1574866179], length 0
+02:45:02.373191 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 107909:109223, ack 1, win 501, options [nop,nop,TS val 1574866576 ecr 3376930586], length 1314
+02:45:02.398046 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 100088, win 292, options [nop,nop,TS val 3376930620 ecr 1574866246], length 0
+02:45:02.416905 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 109223:110537, ack 1, win 501, options [nop,nop,TS val 1574866620 ecr 3376930620], length 1314
+02:45:02.477756 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 110537:111851, ack 1, win 501, options [nop,nop,TS val 1574866680 ecr 3376930620], length 1314
+02:45:02.491359 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 102653, win 292, options [nop,nop,TS val 3376930715 ecr 1574866312], length 0
+02:45:02.491371 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 111851:112556, ack 1, win 501, options [nop,nop,TS val 1574866694 ecr 3376930715], length 705
+02:45:02.540260 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 112556:113870, ack 1, win 501, options [nop,nop,TS val 1574866743 ecr 3376930715], length 1314
+02:45:02.558023 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 105281, win 292, options [nop,nop,TS val 3376930778 ecr 1574866411], length 0
+02:45:02.576985 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 113870:115184, ack 1, win 501, options [nop,nop,TS val 1574866780 ecr 3376930778], length 1314
+02:45:02.610941 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 115184:116498, ack 1, win 501, options [nop,nop,TS val 1574866814 ecr 3376930778], length 1314
+02:45:02.645882 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 107909, win 291, options [nop,nop,TS val 3376930871 ecr 1574866492], length 0
+02:45:02.672991 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 116498:117812, ack 1, win 501, options [nop,nop,TS val 1574866876 ecr 3376930871], length 1314
+02:45:02.710433 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 117812:119126, ack 1, win 501, options [nop,nop,TS val 1574866913 ecr 3376930871], length 1314
+02:45:02.722748 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 110537, win 291, options [nop,nop,TS val 3376930948 ecr 1574866576], length 0
+02:45:02.740108 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 119126:120440, ack 1, win 501, options [nop,nop,TS val 1574866943 ecr 3376930948], length 1314
+02:45:02.795275 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 112556, win 292, options [nop,nop,TS val 3376931021 ecr 1574866680], length 0
+02:45:02.795338 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 120440:121513, ack 1, win 501, options [nop,nop,TS val 1574866998 ecr 3376931021], length 1073
+02:45:02.841036 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 121513:122827, ack 1, win 501, options [nop,nop,TS val 1574867044 ecr 3376931021], length 1314
+02:45:02.873609 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 122827:124141, ack 1, win 501, options [nop,nop,TS val 1574867076 ecr 3376931021], length 1314
+02:45:02.881190 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 115184, win 292, options [nop,nop,TS val 3376931106 ecr 1574866743], length 0
+02:45:02.907084 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 124141:125455, ack 1, win 501, options [nop,nop,TS val 1574867110 ecr 3376931106], length 1314
+02:45:02.971047 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 125455:126769, ack 1, win 501, options [nop,nop,TS val 1574867174 ecr 3376931106], length 1314
+02:45:02.977478 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 117812, win 291, options [nop,nop,TS val 3376931202 ecr 1574866814], length 0
+02:45:03.010975 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 126769:128083, ack 1, win 501, options [nop,nop,TS val 1574867214 ecr 3376931202], length 1314
+02:45:03.044178 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 128083:129397, ack 1, win 501, options [nop,nop,TS val 1574867247 ecr 3376931202], length 1314
+02:45:03.044235 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 120440, win 291, options [nop,nop,TS val 3376931269 ecr 1574866913], length 0
+02:45:03.099654 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 121513, win 292, options [nop,nop,TS val 3376931325 ecr 1574866998], length 0
+02:45:03.099672 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 129397:130553, ack 1, win 501, options [nop,nop,TS val 1574867302 ecr 3376931325], length 1156
+02:45:03.142556 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 130553:131867, ack 1, win 501, options [nop,nop,TS val 1574867345 ecr 3376931325], length 1314
+02:45:03.177485 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 131867:133181, ack 1, win 501, options [nop,nop,TS val 1574867380 ecr 3376931325], length 1314
+02:45:03.178038 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 124141, win 292, options [nop,nop,TS val 3376931403 ecr 1574867044], length 0
+02:45:03.228277 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 133181:134495, ack 1, win 501, options [nop,nop,TS val 1574867431 ecr 3376931403], length 1314
+02:45:03.275304 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 126769, win 291, options [nop,nop,TS val 3376931501 ecr 1574867110], length 0
+02:45:03.277101 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 134495:135809, ack 1, win 501, options [nop,nop,TS val 1574867480 ecr 3376931501], length 1314
+02:45:03.309194 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 135809:137123, ack 1, win 501, options [nop,nop,TS val 1574867512 ecr 3376931501], length 1314
+02:45:03.348450 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 129397, win 291, options [nop,nop,TS val 3376931574 ecr 1574867214], length 0
+02:45:03.356356 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 137123:138437, ack 1, win 501, options [nop,nop,TS val 1574867559 ecr 3376931574], length 1314
+02:45:03.403981 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 130553, win 292, options [nop,nop,TS val 3376931629 ecr 1574867302], length 0
+02:45:03.404015 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 138437:139514, ack 1, win 501, options [nop,nop,TS val 1574867607 ecr 3376931629], length 1077
+02:45:03.440117 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 139514:140828, ack 1, win 501, options [nop,nop,TS val 1574867643 ecr 3376931629], length 1314
+02:45:03.473657 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 140828:142142, ack 1, win 501, options [nop,nop,TS val 1574867676 ecr 3376931629], length 1314
+02:45:03.481793 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 133181, win 292, options [nop,nop,TS val 3376931707 ecr 1574867345], length 0
+02:45:03.526735 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 142142:143456, ack 1, win 501, options [nop,nop,TS val 1574867729 ecr 3376931707], length 1314
+02:45:03.576525 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 143456:144770, ack 1, win 501, options [nop,nop,TS val 1574867779 ecr 3376931707], length 1314
+02:45:03.582428 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 135809, win 292, options [nop,nop,TS val 3376931807 ecr 1574867431], length 0
+02:45:03.608556 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 144770:146084, ack 1, win 501, options [nop,nop,TS val 1574867811 ecr 3376931807], length 1314
+02:45:03.655009 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 146084:147398, ack 1, win 501, options [nop,nop,TS val 1574867858 ecr 3376931807], length 1314
+02:45:03.660523 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 138437, win 292, options [nop,nop,TS val 3376931886 ecr 1574867512], length 0
+02:45:03.708090 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 147398:148712, ack 1, win 501, options [nop,nop,TS val 1574867911 ecr 3376931886], length 1314
+02:45:03.708167 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 139514, win 292, options [nop,nop,TS val 3376931933 ecr 1574867607], length 0
+02:45:03.708184 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 148712:149310, ack 1, win 501, options [nop,nop,TS val 1574867911 ecr 3376931933], length 598
+02:45:03.776578 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 149310:150624, ack 1, win 501, options [nop,nop,TS val 1574867979 ecr 3376931933], length 1314
+02:45:03.779314 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 142142, win 292, options [nop,nop,TS val 3376932004 ecr 1574867643], length 0
+02:45:03.808580 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 150624:151938, ack 1, win 501, options [nop,nop,TS val 1574868011 ecr 3376932004], length 1314
+02:45:03.839785 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 151938:153252, ack 1, win 501, options [nop,nop,TS val 1574868042 ecr 3376932004], length 1314
+02:45:03.880433 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 144770, win 292, options [nop,nop,TS val 3376932106 ecr 1574867729], length 0
+02:45:03.910818 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 153252:154566, ack 1, win 501, options [nop,nop,TS val 1574868113 ecr 3376932106], length 1314
+02:45:03.944100 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 154566:155880, ack 1, win 501, options [nop,nop,TS val 1574868147 ecr 3376932106], length 1314
+02:45:03.959641 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 147398, win 292, options [nop,nop,TS val 3376932185 ecr 1574867811], length 0
+02:45:03.975638 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 155880:157194, ack 1, win 501, options [nop,nop,TS val 1574868178 ecr 3376932185], length 1314
+02:45:04.012082 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 149310, win 292, options [nop,nop,TS val 3376932237 ecr 1574867911], length 0
+02:45:04.012101 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 157194:158267, ack 1, win 501, options [nop,nop,TS val 1574868215 ecr 3376932237], length 1073
+02:45:04.074397 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 158267:159581, ack 1, win 501, options [nop,nop,TS val 1574868277 ecr 3376932237], length 1314
+02:45:04.110909 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 159581:160895, ack 1, win 501, options [nop,nop,TS val 1574868314 ecr 3376932237], length 1314
+02:45:04.112836 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 151938, win 292, options [nop,nop,TS val 3376932338 ecr 1574867979], length 0
+02:45:04.142555 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 160895:162209, ack 1, win 501, options [nop,nop,TS val 1574868345 ecr 3376932338], length 1314
+02:45:04.207935 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 162209:163523, ack 1, win 501, options [nop,nop,TS val 1574868411 ecr 3376932338], length 1314
+02:45:04.214420 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 153252, win 292, options [nop,nop,TS val 3376932438 ecr 1574868042], length 0
+02:45:04.239808 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 163523:164837, ack 1, win 501, options [nop,nop,TS val 1574868443 ecr 3376932438], length 1314
+02:45:04.250451 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 155880, win 292, options [nop,nop,TS val 3376932474 ecr 1574868113], length 0
+02:45:04.274192 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 164837:166151, ack 1, win 501, options [nop,nop,TS val 1574868477 ecr 3376932474], length 1314
+02:45:04.316510 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 158267, win 292, options [nop,nop,TS val 3376932542 ecr 1574868178], length 0
+02:45:04.316549 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 166151:167228, ack 1, win 501, options [nop,nop,TS val 1574868519 ecr 3376932542], length 1077
+02:45:04.374848 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 167228:168542, ack 1, win 501, options [nop,nop,TS val 1574868578 ecr 3376932542], length 1314
+02:45:04.407699 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 168542:169856, ack 1, win 501, options [nop,nop,TS val 1574868610 ecr 3376932542], length 1314
+02:45:04.415272 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 160895, win 292, options [nop,nop,TS val 3376932640 ecr 1574868277], length 0
+02:45:04.441308 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 169856:171170, ack 1, win 501, options [nop,nop,TS val 1574868644 ecr 3376932640], length 1314
+02:45:04.506459 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 171170:172484, ack 1, win 501, options [nop,nop,TS val 1574868709 ecr 3376932640], length 1314
+02:45:04.513392 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 163523, win 291, options [nop,nop,TS val 3376932738 ecr 1574868345], length 0
+02:45:04.540288 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 172484:173798, ack 1, win 501, options [nop,nop,TS val 1574868743 ecr 3376932738], length 1314
+02:45:04.572689 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 173798:175112, ack 1, win 501, options [nop,nop,TS val 1574868775 ecr 3376932738], length 1314
+02:45:04.578043 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 166151, win 291, options [nop,nop,TS val 3376932803 ecr 1574868443], length 0
+02:45:04.620499 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 167228, win 292, options [nop,nop,TS val 3376932846 ecr 1574868519], length 0
+02:45:04.620540 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 175112:176264, ack 1, win 501, options [nop,nop,TS val 1574868823 ecr 3376932846], length 1152
+02:45:04.674890 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 176264:177578, ack 1, win 501, options [nop,nop,TS val 1574868878 ecr 3376932846], length 1314
+02:45:04.707163 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 177578:178892, ack 1, win 501, options [nop,nop,TS val 1574868910 ecr 3376932846], length 1314
+02:45:04.711781 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 169856, win 292, options [nop,nop,TS val 3376932937 ecr 1574868578], length 0
+02:45:04.743449 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 178892:180206, ack 1, win 501, options [nop,nop,TS val 1574868946 ecr 3376932937], length 1314
+02:45:04.808008 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 180206:181520, ack 1, win 501, options [nop,nop,TS val 1574869011 ecr 3376932937], length 1314
+02:45:04.810663 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 172484, win 291, options [nop,nop,TS val 3376933036 ecr 1574868644], length 0
+02:45:04.840407 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 181520:182834, ack 1, win 501, options [nop,nop,TS val 1574869043 ecr 3376933036], length 1314
+02:45:04.873619 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 182834:184148, ack 1, win 501, options [nop,nop,TS val 1574869076 ecr 3376933036], length 1314
+02:45:04.877401 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 175112, win 291, options [nop,nop,TS val 3376933102 ecr 1574868743], length 0
+02:45:04.924794 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 176264, win 292, options [nop,nop,TS val 3376933150 ecr 1574868823], length 0
+02:45:04.924809 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 184148:185224, ack 1, win 501, options [nop,nop,TS val 1574869128 ecr 3376933150], length 1076
+02:45:04.976747 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 185224:186538, ack 1, win 501, options [nop,nop,TS val 1574869179 ecr 3376933150], length 1314
+02:45:05.010860 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 186538:187852, ack 1, win 501, options [nop,nop,TS val 1574869214 ecr 3376933150], length 1314
+02:45:05.011102 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 178892, win 292, options [nop,nop,TS val 3376933236 ecr 1574868878], length 0
+02:45:05.041835 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 187852:189166, ack 1, win 501, options [nop,nop,TS val 1574869245 ecr 3376933236], length 1314
+02:45:05.105635 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 189166:190480, ack 1, win 501, options [nop,nop,TS val 1574869308 ecr 3376933236], length 1314
+02:45:05.112341 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 181520, win 291, options [nop,nop,TS val 3376933338 ecr 1574868946], length 0
+02:45:05.144072 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 190480:191794, ack 1, win 501, options [nop,nop,TS val 1574869347 ecr 3376933338], length 1314
+02:45:05.173171 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 191794:193108, ack 1, win 501, options [nop,nop,TS val 1574869376 ecr 3376933338], length 1314
+02:45:05.179233 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 184148, win 291, options [nop,nop,TS val 3376933404 ecr 1574869043], length 0
+02:45:05.229662 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 185224, win 292, options [nop,nop,TS val 3376933455 ecr 1574869128], length 0
+02:45:05.229679 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 193108:194181, ack 1, win 501, options [nop,nop,TS val 1574869432 ecr 3376933455], length 1073
+02:45:05.276108 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 194181:195495, ack 1, win 501, options [nop,nop,TS val 1574869479 ecr 3376933455], length 1314
+02:45:05.310698 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 195495:196809, ack 1, win 501, options [nop,nop,TS val 1574869513 ecr 3376933455], length 1314
+02:45:05.316106 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 187852, win 292, options [nop,nop,TS val 3376933541 ecr 1574869179], length 0
+02:45:05.342443 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 196809:198123, ack 1, win 501, options [nop,nop,TS val 1574869545 ecr 3376933541], length 1314
+02:45:05.407515 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 198123:199437, ack 1, win 501, options [nop,nop,TS val 1574869610 ecr 3376933541], length 1314
+02:45:05.411969 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 190480, win 291, options [nop,nop,TS val 3376933636 ecr 1574869245], length 0
+02:45:05.440224 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 199437:200751, ack 1, win 501, options [nop,nop,TS val 1574869643 ecr 3376933636], length 1314
+02:45:05.473519 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 200751:202065, ack 1, win 501, options [nop,nop,TS val 1574869676 ecr 3376933636], length 1314
+02:45:05.477394 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 193108, win 291, options [nop,nop,TS val 3376933703 ecr 1574869347], length 0
+02:45:05.533481 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 194181, win 292, options [nop,nop,TS val 3376933759 ecr 1574869432], length 0
+02:45:05.533504 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 202065:203226, ack 1, win 501, options [nop,nop,TS val 1574869736 ecr 3376933759], length 1161
+02:45:05.573209 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 203226:204540, ack 1, win 501, options [nop,nop,TS val 1574869776 ecr 3376933759], length 1314
+02:45:05.608089 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 204540:205854, ack 1, win 501, options [nop,nop,TS val 1574869811 ecr 3376933759], length 1314
+02:45:05.615617 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 196809, win 292, options [nop,nop,TS val 3376933841 ecr 1574869479], length 0
+02:45:05.659425 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 205854:207168, ack 1, win 501, options [nop,nop,TS val 1574869862 ecr 3376933841], length 1314
+02:45:05.706467 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 207168:208482, ack 1, win 501, options [nop,nop,TS val 1574869909 ecr 3376933841], length 1314
+02:45:05.713015 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 199437, win 291, options [nop,nop,TS val 3376933937 ecr 1574869545], length 0
+02:45:05.739911 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 208482:209796, ack 1, win 501, options [nop,nop,TS val 1574869943 ecr 3376933937], length 1314
+02:45:05.778300 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 202065, win 291, options [nop,nop,TS val 3376934003 ecr 1574869643], length 0
+02:45:05.787097 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 209796:211110, ack 1, win 501, options [nop,nop,TS val 1574869990 ecr 3376934003], length 1314
+02:45:05.838725 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 203226, win 292, options [nop,nop,TS val 3376934063 ecr 1574869736], length 0
+02:45:05.838752 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 211110:212187, ack 1, win 501, options [nop,nop,TS val 1574870041 ecr 3376934063], length 1077
+02:45:05.872515 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 212187:213501, ack 1, win 501, options [nop,nop,TS val 1574870075 ecr 3376934063], length 1314
+02:45:05.909229 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 213501:214815, ack 1, win 501, options [nop,nop,TS val 1574870112 ecr 3376934063], length 1314
+02:45:05.912322 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 205854, win 292, options [nop,nop,TS val 3376934138 ecr 1574869776], length 0
+02:45:05.958268 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 214815:216129, ack 1, win 501, options [nop,nop,TS val 1574870161 ecr 3376934138], length 1314
+02:45:06.009143 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 216129:217443, ack 1, win 501, options [nop,nop,TS val 1574870212 ecr 3376934138], length 1314
+02:45:06.012837 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 208482, win 292, options [nop,nop,TS val 3376934236 ecr 1574869862], length 0
+02:45:06.040454 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 217443:218757, ack 1, win 501, options [nop,nop,TS val 1574870243 ecr 3376934236], length 1314
+02:45:06.086038 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 218757:220071, ack 1, win 501, options [nop,nop,TS val 1574870289 ecr 3376934236], length 1314
+02:45:06.094665 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 211110, win 292, options [nop,nop,TS val 3376934318 ecr 1574869943], length 0
+02:45:06.142942 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 212187, win 292, options [nop,nop,TS val 3376934368 ecr 1574870041], length 0
+02:45:06.142978 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 220071:221131, ack 1, win 501, options [nop,nop,TS val 1574870346 ecr 3376934368], length 1060
+02:45:06.172205 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 221131:222445, ack 1, win 501, options [nop,nop,TS val 1574870375 ecr 3376934368], length 1314
+02:45:06.208123 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 222445:223759, ack 1, win 501, options [nop,nop,TS val 1574870411 ecr 3376934368], length 1314
+02:45:06.215522 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 214815, win 292, options [nop,nop,TS val 3376934441 ecr 1574870075], length 0
+02:45:06.257282 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 223759:225073, ack 1, win 501, options [nop,nop,TS val 1574870460 ecr 3376934441], length 1314
+02:45:06.310621 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 225073:226387, ack 1, win 501, options [nop,nop,TS val 1574870513 ecr 3376934441], length 1314
+02:45:06.319919 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 217443, win 292, options [nop,nop,TS val 3376934539 ecr 1574870161], length 0
+02:45:06.342916 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 226387:227701, ack 1, win 501, options [nop,nop,TS val 1574870546 ecr 3376934539], length 1314
+02:45:06.385749 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 227701:229015, ack 1, win 501, options [nop,nop,TS val 1574870588 ecr 3376934539], length 1314
+02:45:06.391321 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 220071, win 292, options [nop,nop,TS val 3376934616 ecr 1574870243], length 0
+02:45:06.441544 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 229015:230329, ack 1, win 501, options [nop,nop,TS val 1574870644 ecr 3376934616], length 1314
+02:45:06.447706 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 221131, win 292, options [nop,nop,TS val 3376934673 ecr 1574870346], length 0
+02:45:06.447726 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 230329:230936, ack 1, win 501, options [nop,nop,TS val 1574870650 ecr 3376934673], length 607
+02:45:06.509519 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 230936:232250, ack 1, win 501, options [nop,nop,TS val 1574870712 ecr 3376934673], length 1314
+02:45:06.516894 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 223759, win 292, options [nop,nop,TS val 3376934739 ecr 1574870375], length 0
+02:45:06.541170 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 232250:233564, ack 1, win 501, options [nop,nop,TS val 1574870744 ecr 3376934739], length 1314
+02:45:06.574694 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 233564:234878, ack 1, win 501, options [nop,nop,TS val 1574870777 ecr 3376934739], length 1314
+02:45:06.619728 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 226387, win 292, options [nop,nop,TS val 3376934844 ecr 1574870460], length 0
+02:45:06.639789 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 234878:236192, ack 1, win 501, options [nop,nop,TS val 1574870842 ecr 3376934844], length 1314
+02:45:06.673542 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 236192:237506, ack 1, win 501, options [nop,nop,TS val 1574870876 ecr 3376934844], length 1314
+02:45:06.691900 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 229015, win 292, options [nop,nop,TS val 3376934916 ecr 1574870546], length 0
+02:45:06.705439 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 237506:238820, ack 1, win 501, options [nop,nop,TS val 1574870908 ecr 3376934916], length 1314
+02:45:06.753734 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 230936, win 292, options [nop,nop,TS val 3376934977 ecr 1574870644], length 0
+02:45:06.753775 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 238820:239992, ack 1, win 501, options [nop,nop,TS val 1574870956 ecr 3376934977], length 1172
+02:45:06.809040 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 239992:241306, ack 1, win 501, options [nop,nop,TS val 1574871012 ecr 3376934977], length 1314
+02:45:06.840366 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 241306:242620, ack 1, win 501, options [nop,nop,TS val 1574871043 ecr 3376934977], length 1314
+02:45:06.847235 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 233564, win 292, options [nop,nop,TS val 3376935073 ecr 1574870712], length 0
+02:45:06.876865 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 242620:243934, ack 1, win 501, options [nop,nop,TS val 1574871080 ecr 3376935073], length 1314
+02:45:06.940718 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 243934:245248, ack 1, win 501, options [nop,nop,TS val 1574871143 ecr 3376935073], length 1314
+02:45:06.949286 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 236192, win 291, options [nop,nop,TS val 3376935169 ecr 1574870777], length 0
+02:45:06.976829 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 245248:246562, ack 1, win 501, options [nop,nop,TS val 1574871180 ecr 3376935169], length 1314
+02:45:07.008982 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 246562:247876, ack 1, win 501, options [nop,nop,TS val 1574871212 ecr 3376935169], length 1314
+02:45:07.012886 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 238820, win 291, options [nop,nop,TS val 3376935235 ecr 1574870876], length 0
+02:45:07.059091 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 239992, win 292, options [nop,nop,TS val 3376935283 ecr 1574870956], length 0
+02:45:07.059104 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 247876:248937, ack 1, win 501, options [nop,nop,TS val 1574871262 ecr 3376935283], length 1061
+02:45:07.110289 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 248937:250251, ack 1, win 501, options [nop,nop,TS val 1574871313 ecr 3376935283], length 1314
+02:45:07.144206 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 250251:251565, ack 1, win 501, options [nop,nop,TS val 1574871347 ecr 3376935283], length 1314
+02:45:07.151055 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 242620, win 292, options [nop,nop,TS val 3376935370 ecr 1574871012], length 0
+02:45:07.175263 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 251565:252879, ack 1, win 501, options [nop,nop,TS val 1574871378 ecr 3376935370], length 1314
+02:45:07.239022 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 252879:254193, ack 1, win 501, options [nop,nop,TS val 1574871442 ecr 3376935370], length 1314
+02:45:07.248869 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 245248, win 291, options [nop,nop,TS val 3376935474 ecr 1574871080], length 0
+02:45:07.275753 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 254193:255507, ack 1, win 501, options [nop,nop,TS val 1574871478 ecr 3376935474], length 1314
+02:45:07.309562 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 255507:256821, ack 1, win 501, options [nop,nop,TS val 1574871512 ecr 3376935474], length 1314
+02:45:07.316114 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 247876, win 291, options [nop,nop,TS val 3376935541 ecr 1574871180], length 0
+02:45:07.365366 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 248937, win 292, options [nop,nop,TS val 3376935589 ecr 1574871262], length 0
+02:45:07.365399 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 256821:257897, ack 1, win 501, options [nop,nop,TS val 1574871568 ecr 3376935589], length 1076
+02:45:07.410087 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 257897:259211, ack 1, win 501, options [nop,nop,TS val 1574871613 ecr 3376935589], length 1314
+02:45:07.441815 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 259211:260525, ack 1, win 501, options [nop,nop,TS val 1574871645 ecr 3376935589], length 1314
+02:45:07.459955 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 251565, win 292, options [nop,nop,TS val 3376935680 ecr 1574871313], length 0
+02:45:07.474861 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 260525:261839, ack 1, win 501, options [nop,nop,TS val 1574871678 ecr 3376935680], length 1314
+02:45:07.543686 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 261839:263153, ack 1, win 501, options [nop,nop,TS val 1574871746 ecr 3376935680], length 1314
+02:45:07.544907 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 254193, win 291, options [nop,nop,TS val 3376935770 ecr 1574871378], length 0
+02:45:07.575794 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 263153:264467, ack 1, win 501, options [nop,nop,TS val 1574871778 ecr 3376935770], length 1314
+02:45:07.609213 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 264467:265781, ack 1, win 501, options [nop,nop,TS val 1574871812 ecr 3376935770], length 1314
+02:45:07.615070 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 256821, win 291, options [nop,nop,TS val 3376935840 ecr 1574871478], length 0
+02:45:07.676033 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 265781:267095, ack 1, win 501, options [nop,nop,TS val 1574871879 ecr 3376935840], length 1314
+02:45:07.681082 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 257897, win 292, options [nop,nop,TS val 3376935895 ecr 1574871568], length 0
+02:45:07.681115 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 267095:267789, ack 1, win 501, options [nop,nop,TS val 1574871884 ecr 3376935895], length 694
+02:45:07.744115 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 267789:269103, ack 1, win 501, options [nop,nop,TS val 1574871947 ecr 3376935895], length 1314
+02:45:07.751566 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 260525, win 292, options [nop,nop,TS val 3376935976 ecr 1574871613], length 0
+02:45:07.773731 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 269103:270417, ack 1, win 501, options [nop,nop,TS val 1574871976 ecr 3376935976], length 1314
+02:45:07.811146 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 270417:271731, ack 1, win 501, options [nop,nop,TS val 1574872014 ecr 3376935976], length 1314
+02:45:07.845203 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 261839, win 292, options [nop,nop,TS val 3376936070 ecr 1574871678], length 0
+02:45:07.874945 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 271731:273045, ack 1, win 501, options [nop,nop,TS val 1574872078 ecr 3376936070], length 1314
+02:45:07.884522 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 264467, win 292, options [nop,nop,TS val 3376936106 ecr 1574871746], length 0
+02:45:07.907657 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 273045:274359, ack 1, win 501, options [nop,nop,TS val 1574872110 ecr 3376936106], length 1314
+02:45:07.941964 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 274359:275673, ack 1, win 501, options [nop,nop,TS val 1574872145 ecr 3376936106], length 1314
+02:45:07.992138 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 267095, win 291, options [nop,nop,TS val 3376936214 ecr 1574871812], length 0
+02:45:08.001810 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 267789, win 292, options [nop,nop,TS val 3376936218 ecr 1574871884], length 0
+02:45:08.001843 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 275673:276837, ack 1, win 501, options [nop,nop,TS val 1574872205 ecr 3376936218], length 1164
+02:45:08.044037 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 276837:278151, ack 1, win 501, options [nop,nop,TS val 1574872247 ecr 3376936218], length 1314
+02:45:08.075100 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 278151:279465, ack 1, win 501, options [nop,nop,TS val 1574872278 ecr 3376936218], length 1314
+02:45:08.079680 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 270417, win 292, options [nop,nop,TS val 3376936305 ecr 1574871947], length 0
+02:45:08.116123 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 279465:280779, ack 1, win 501, options [nop,nop,TS val 1574872319 ecr 3376936305], length 1314
+02:45:08.175782 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 280779:282093, ack 1, win 501, options [nop,nop,TS val 1574872378 ecr 3376936305], length 1314
+02:45:08.188578 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 273045, win 291, options [nop,nop,TS val 3376936406 ecr 1574872014], length 0
+02:45:08.210973 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 282093:283407, ack 1, win 501, options [nop,nop,TS val 1574872414 ecr 3376936406], length 1314
+02:45:08.244455 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 283407:284721, ack 1, win 501, options [nop,nop,TS val 1574872447 ecr 3376936406], length 1314
+02:45:08.266579 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 275673, win 291, options [nop,nop,TS val 3376936482 ecr 1574872110], length 0
+02:45:08.308377 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 284721:286035, ack 1, win 501, options [nop,nop,TS val 1574872511 ecr 3376936482], length 1314
+02:45:08.319362 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 276837, win 292, options [nop,nop,TS val 3376936537 ecr 1574872205], length 0
+02:45:08.319387 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 286035:286740, ack 1, win 501, options [nop,nop,TS val 1574872522 ecr 3376936537], length 705
+02:45:08.376155 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 286740:288054, ack 1, win 501, options [nop,nop,TS val 1574872579 ecr 3376936537], length 1314
+02:45:08.388558 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 279465, win 292, options [nop,nop,TS val 3376936605 ecr 1574872247], length 0
+02:45:08.409552 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 288054:289368, ack 1, win 501, options [nop,nop,TS val 1574872612 ecr 3376936605], length 1314
+02:45:08.442930 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 289368:290682, ack 1, win 501, options [nop,nop,TS val 1574872646 ecr 3376936605], length 1314
+02:45:08.499778 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 282093, win 291, options [nop,nop,TS val 3376936712 ecr 1574872319], length 0
+02:45:08.509748 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 290682:291996, ack 1, win 501, options [nop,nop,TS val 1574872712 ecr 3376936712], length 1314
+02:45:08.541899 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 291996:293310, ack 1, win 501, options [nop,nop,TS val 1574872745 ecr 3376936712], length 1314
+02:45:08.574587 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 293310:294624, ack 1, win 501, options [nop,nop,TS val 1574872777 ecr 3376936712], length 1314
+02:45:08.575085 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 284721, win 291, options [nop,nop,TS val 3376936788 ecr 1574872414], length 0
+02:45:08.643062 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 286740, win 292, options [nop,nop,TS val 3376936855 ecr 1574872511], length 0
+02:45:08.643097 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 294624:295780, ack 1, win 501, options [nop,nop,TS val 1574872846 ecr 3376936855], length 1156
+02:45:08.677490 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 295780:297094, ack 1, win 501, options [nop,nop,TS val 1574872880 ecr 3376936855], length 1314
+02:45:08.710977 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 297094:298408, ack 1, win 501, options [nop,nop,TS val 1574872914 ecr 3376936855], length 1314
+02:45:08.733598 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 289368, win 292, options [nop,nop,TS val 3376936950 ecr 1574872579], length 0
+02:45:08.758167 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 298408:299722, ack 1, win 501, options [nop,nop,TS val 1574872961 ecr 3376936950], length 1314
+02:45:08.810825 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 299722:301036, ack 1, win 501, options [nop,nop,TS val 1574873014 ecr 3376936950], length 1314
+02:45:08.841613 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 291996, win 291, options [nop,nop,TS val 3376937050 ecr 1574872646], length 0
+02:45:08.843916 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 301036:302350, ack 1, win 501, options [nop,nop,TS val 1574873047 ecr 3376937050], length 1314
+02:45:08.886867 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 302350:303664, ack 1, win 501, options [nop,nop,TS val 1574873090 ecr 3376937050], length 1314
+02:45:08.904731 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 294624, win 291, options [nop,nop,TS val 3376937110 ecr 1574872745], length 0
+02:45:08.940342 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 303664:304978, ack 1, win 501, options [nop,nop,TS val 1574873143 ecr 3376937110], length 1314
+02:45:08.977037 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 304978:306292, ack 1, win 501, options [nop,nop,TS val 1574873180 ecr 3376937110], length 1314
+02:45:08.983069 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 295780, win 292, options [nop,nop,TS val 3376937184 ecr 1574872846], length 0
+02:45:08.983111 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 306292:306627, ack 1, win 501, options [nop,nop,TS val 1574873186 ecr 3376937184], length 335
+02:45:09.044026 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 306627:307941, ack 1, win 501, options [nop,nop,TS val 1574873247 ecr 3376937184], length 1314
+02:45:09.065200 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 298408, win 292, options [nop,nop,TS val 3376937253 ecr 1574872880], length 0
+02:45:09.074659 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 307941:309255, ack 1, win 501, options [nop,nop,TS val 1574873277 ecr 3376937253], length 1314
+02:45:09.108665 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 309255:310569, ack 1, win 501, options [nop,nop,TS val 1574873311 ecr 3376937253], length 1314
+02:45:09.164984 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 301036, win 292, options [nop,nop,TS val 3376937356 ecr 1574872961], length 0
+02:45:09.176094 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 310569:311883, ack 1, win 501, options [nop,nop,TS val 1574873379 ecr 3376937356], length 1314
+02:45:09.209436 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 311883:313197, ack 1, win 501, options [nop,nop,TS val 1574873412 ecr 3376937356], length 1314
+02:45:09.241592 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 313197:314511, ack 1, win 501, options [nop,nop,TS val 1574873444 ecr 3376937356], length 1314
+02:45:09.250550 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 303664, win 292, options [nop,nop,TS val 3376937436 ecr 1574873047], length 0
+02:45:09.306541 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 314511:315825, ack 1, win 501, options [nop,nop,TS val 1574873509 ecr 3376937436], length 1314
+02:45:09.340931 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 315825:317139, ack 1, win 501, options [nop,nop,TS val 1574873544 ecr 3376937436], length 1314
+02:45:09.352370 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 306292, win 292, options [nop,nop,TS val 3376937539 ecr 1574873143], length 0
+02:45:09.359966 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 306627, win 292, options [nop,nop,TS val 3376937547 ecr 1574873186], length 0
+02:45:09.359983 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 317139:317648, ack 1, win 501, options [nop,nop,TS val 1574873563 ecr 3376937547], length 509
+02:45:09.410771 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 317648:318962, ack 1, win 501, options [nop,nop,TS val 1574873613 ecr 3376937547], length 1314
+02:45:09.441356 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 318962:320276, ack 1, win 501, options [nop,nop,TS val 1574873644 ecr 3376937547], length 1314
+02:45:09.447668 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 309255, win 292, options [nop,nop,TS val 3376937639 ecr 1574873247], length 0
+02:45:09.483762 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 320276:321590, ack 1, win 501, options [nop,nop,TS val 1574873686 ecr 3376937639], length 1314
+02:45:09.544070 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 321590:322904, ack 1, win 501, options [nop,nop,TS val 1574873747 ecr 3376937639], length 1314
+02:45:09.556370 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 311883, win 291, options [nop,nop,TS val 3376937749 ecr 1574873311], length 0
+02:45:09.577587 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 322904:324218, ack 1, win 501, options [nop,nop,TS val 1574873780 ecr 3376937749], length 1314
+02:45:09.612578 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 324218:325532, ack 1, win 501, options [nop,nop,TS val 1574873815 ecr 3376937749], length 1314
+02:45:09.632798 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 314511, win 291, options [nop,nop,TS val 3376937815 ecr 1574873412], length 0
+02:45:09.677612 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 325532:326846, ack 1, win 501, options [nop,nop,TS val 1574873880 ecr 3376937815], length 1314
+02:45:09.710807 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 326846:328160, ack 1, win 501, options [nop,nop,TS val 1574873913 ecr 3376937815], length 1314
+02:45:09.721807 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 317139, win 291, options [nop,nop,TS val 3376937906 ecr 1574873509], length 0
+02:45:09.734172 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 317648, win 292, options [nop,nop,TS val 3376937922 ecr 1574873563], length 0
+02:45:09.734198 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 328160:328585, ack 1, win 501, options [nop,nop,TS val 1574873937 ecr 3376937922], length 425
+02:45:09.776467 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 328585:329899, ack 1, win 501, options [nop,nop,TS val 1574873979 ecr 3376937922], length 1314
+02:45:09.811045 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 329899:331213, ack 1, win 501, options [nop,nop,TS val 1574874014 ecr 3376937922], length 1314
+02:45:09.818189 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 320276, win 292, options [nop,nop,TS val 3376938006 ecr 1574873613], length 0
+02:45:09.848773 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 331213:332527, ack 1, win 501, options [nop,nop,TS val 1574874051 ecr 3376938006], length 1314
+02:45:09.910375 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 332527:333841, ack 1, win 501, options [nop,nop,TS val 1574874113 ecr 3376938006], length 1314
+02:45:09.920173 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 322904, win 291, options [nop,nop,TS val 3376938107 ecr 1574873686], length 0
+02:45:09.944196 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 333841:335155, ack 1, win 501, options [nop,nop,TS val 1574874147 ecr 3376938107], length 1314
+02:45:09.977489 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 335155:336469, ack 1, win 501, options [nop,nop,TS val 1574874180 ecr 3376938107], length 1314
+02:45:10.009348 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 325532, win 291, options [nop,nop,TS val 3376938182 ecr 1574873780], length 0
+02:45:10.043536 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 336469:337783, ack 1, win 501, options [nop,nop,TS val 1574874246 ecr 3376938182], length 1314
+02:45:10.077448 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 337783:339097, ack 1, win 501, options [nop,nop,TS val 1574874280 ecr 3376938182], length 1314
+02:45:10.110911 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 339097:340411, ack 1, win 501, options [nop,nop,TS val 1574874314 ecr 3376938182], length 1314
+02:45:10.128393 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 328160, win 291, options [nop,nop,TS val 3376938277 ecr 1574873880], length 0
+02:45:10.160523 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 328585, win 292, options [nop,nop,TS val 3376938307 ecr 1574873937], length 0
+02:45:10.160540 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 340411:341496, ack 1, win 501, options [nop,nop,TS val 1574874363 ecr 3376938307], length 1085
+02:45:10.212410 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 341496:342810, ack 1, win 501, options [nop,nop,TS val 1574874415 ecr 3376938307], length 1314
+02:45:10.227048 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 331213, win 291, options [nop,nop,TS val 3376938393 ecr 1574873979], length 0
+02:45:10.239872 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 342810:344124, ack 1, win 501, options [nop,nop,TS val 1574874443 ecr 3376938393], length 1314
+02:45:10.276039 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 344124:345438, ack 1, win 501, options [nop,nop,TS val 1574874479 ecr 3376938393], length 1314
+02:45:10.326434 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 333841, win 291, options [nop,nop,TS val 3376938489 ecr 1574874051], length 0
+02:45:10.344044 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 345438:346752, ack 1, win 501, options [nop,nop,TS val 1574874547 ecr 3376938489], length 1314
+02:45:10.377178 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 346752:348066, ack 1, win 501, options [nop,nop,TS val 1574874580 ecr 3376938489], length 1314
+02:45:10.401982 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 336469, win 291, options [nop,nop,TS val 3376938559 ecr 1574874147], length 0
+02:45:10.409218 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 348066:349380, ack 1, win 501, options [nop,nop,TS val 1574874612 ecr 3376938559], length 1314
+02:45:10.477418 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 349380:350694, ack 1, win 501, options [nop,nop,TS val 1574874680 ecr 3376938559], length 1314
+02:45:10.511370 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 350694:352008, ack 1, win 501, options [nop,nop,TS val 1574874714 ecr 3376938559], length 1314
+02:45:10.513960 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 339097, win 291, options [nop,nop,TS val 3376938685 ecr 1574874246], length 0
+02:45:10.541047 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 352008:353322, ack 1, win 501, options [nop,nop,TS val 1574874744 ecr 3376938685], length 1314
+02:45:10.583385 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 341496, win 291, options [nop,nop,TS val 3376938750 ecr 1574874314], length 0
+02:45:10.583403 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 353322:354414, ack 1, win 501, options [nop,nop,TS val 1574874786 ecr 3376938750], length 1092
+02:45:10.644000 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 354414:355728, ack 1, win 501, options [nop,nop,TS val 1574874847 ecr 3376938750], length 1314
+02:45:10.666448 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 344124, win 291, options [nop,nop,TS val 3376938835 ecr 1574874415], length 0
+02:45:10.677548 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 355728:357042, ack 1, win 501, options [nop,nop,TS val 1574874880 ecr 3376938835], length 1314
+02:45:10.710810 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 357042:358356, ack 1, win 501, options [nop,nop,TS val 1574874913 ecr 3376938835], length 1314
+02:45:10.758014 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 345438, win 292, options [nop,nop,TS val 3376938918 ecr 1574874479], length 0
+02:45:10.777697 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 358356:359670, ack 1, win 501, options [nop,nop,TS val 1574874980 ecr 3376938918], length 1314
+02:45:10.795047 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 348066, win 292, options [nop,nop,TS val 3376938958 ecr 1574874547], length 0
+02:45:10.811190 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 359670:360984, ack 1, win 501, options [nop,nop,TS val 1574875014 ecr 3376938958], length 1314
+02:45:10.840465 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 360984:362298, ack 1, win 501, options [nop,nop,TS val 1574875043 ecr 3376938958], length 1314
+02:45:10.906510 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 362298:363612, ack 1, win 501, options [nop,nop,TS val 1574875109 ecr 3376938958], length 1314
+02:45:10.908963 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 349380, win 292, options [nop,nop,TS val 3376939050 ecr 1574874612], length 0
+02:45:10.934543 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 352008, win 292, options [nop,nop,TS val 3376939087 ecr 1574874680], length 0
+02:45:10.940932 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 363612:364926, ack 1, win 501, options [nop,nop,TS val 1574875144 ecr 3376939087], length 1314
+02:45:10.977001 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 364926:366240, ack 1, win 501, options [nop,nop,TS val 1574875180 ecr 3376939087], length 1314
+02:45:11.023016 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 354414, win 292, options [nop,nop,TS val 3376939175 ecr 1574874744], length 0
+02:45:11.023067 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 366240:367315, ack 1, win 501, options [nop,nop,TS val 1574875226 ecr 3376939175], length 1075
+02:45:11.074971 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 367315:368629, ack 1, win 501, options [nop,nop,TS val 1574875278 ecr 3376939175], length 1314
+02:45:11.109282 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 368629:369943, ack 1, win 501, options [nop,nop,TS val 1574875312 ecr 3376939175], length 1314
+02:45:11.139449 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 357042, win 292, options [nop,nop,TS val 3376939273 ecr 1574874847], length 0
+02:45:11.143883 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 369943:371257, ack 1, win 501, options [nop,nop,TS val 1574875347 ecr 3376939273], length 1314
+02:45:11.208135 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 371257:372571, ack 1, win 501, options [nop,nop,TS val 1574875411 ecr 3376939273], length 1314
+02:45:11.231965 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 358356, win 292, options [nop,nop,TS val 3376939378 ecr 1574874913], length 0
+02:45:11.241078 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 372571:373885, ack 1, win 501, options [nop,nop,TS val 1574875444 ecr 3376939378], length 1314
+02:45:11.279977 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 373885:375199, ack 1, win 501, options [nop,nop,TS val 1574875483 ecr 3376939378], length 1314
+02:45:11.280031 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 360984, win 292, options [nop,nop,TS val 3376939424 ecr 1574874980], length 0
+02:45:11.344263 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 375199:376513, ack 1, win 501, options [nop,nop,TS val 1574875547 ecr 3376939424], length 1314
+02:45:11.366629 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 363612, win 292, options [nop,nop,TS val 3376939499 ecr 1574875043], length 0
+02:45:11.374350 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 376513:377827, ack 1, win 501, options [nop,nop,TS val 1574875577 ecr 3376939499], length 1314
+02:45:11.411146 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 377827:379141, ack 1, win 501, options [nop,nop,TS val 1574875614 ecr 3376939499], length 1314
+02:45:11.434991 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 366240, win 292, options [nop,nop,TS val 3376939584 ecr 1574875144], length 0
+02:45:11.476624 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 379141:380455, ack 1, win 501, options [nop,nop,TS val 1574875679 ecr 3376939584], length 1314
+02:45:11.488785 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 367315, win 292, options [nop,nop,TS val 3376939642 ecr 1574875226], length 0
+02:45:11.488806 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 380455:381277, ack 1, win 501, options [nop,nop,TS val 1574875692 ecr 3376939642], length 822
+02:45:11.541724 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 381277:382591, ack 1, win 501, options [nop,nop,TS val 1574875744 ecr 3376939642], length 1314
+02:45:11.573930 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 369943, win 292, options [nop,nop,TS val 3376939722 ecr 1574875278], length 0
+02:45:11.578885 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 382591:383905, ack 1, win 501, options [nop,nop,TS val 1574875782 ecr 3376939722], length 1314
+02:45:11.607052 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 383905:385219, ack 1, win 501, options [nop,nop,TS val 1574875810 ecr 3376939722], length 1314
+02:45:11.670215 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 372571, win 291, options [nop,nop,TS val 3376939823 ecr 1574875347], length 0
+02:45:11.677676 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 385219:386533, ack 1, win 501, options [nop,nop,TS val 1574875880 ecr 3376939823], length 1314
+02:45:11.711098 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 386533:387847, ack 1, win 501, options [nop,nop,TS val 1574875914 ecr 3376939823], length 1314
+02:45:11.741588 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 387847:389161, ack 1, win 501, options [nop,nop,TS val 1574875944 ecr 3376939823], length 1314
+02:45:11.753794 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 375199, win 291, options [nop,nop,TS val 3376939899 ecr 1574875444], length 0
+02:45:11.813888 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 389161:390475, ack 1, win 501, options [nop,nop,TS val 1574876017 ecr 3376939899], length 1314
+02:45:11.833058 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 377827, win 291, options [nop,nop,TS val 3376939981 ecr 1574875547], length 0
+02:45:11.844210 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 390475:391789, ack 1, win 501, options [nop,nop,TS val 1574876047 ecr 3376939981], length 1314
+02:45:11.878194 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 391789:393103, ack 1, win 501, options [nop,nop,TS val 1574876081 ecr 3376939981], length 1314
+02:45:11.938276 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 379141, win 292, options [nop,nop,TS val 3376940082 ecr 1574875614], length 0
+02:45:11.943721 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 393103:394417, ack 1, win 501, options [nop,nop,TS val 1574876146 ecr 3376940082], length 1314
+02:45:11.954975 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 381277, win 292, options [nop,nop,TS val 3376940098 ecr 1574875679], length 0
+02:45:11.955011 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 394417:395221, ack 1, win 501, options [nop,nop,TS val 1574876158 ecr 3376940098], length 804
+02:45:12.008734 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 395221:396535, ack 1, win 501, options [nop,nop,TS val 1574876211 ecr 3376940098], length 1314
+02:45:12.041415 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 396535:397849, ack 1, win 501, options [nop,nop,TS val 1574876244 ecr 3376940098], length 1314
+02:45:12.042353 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 383905, win 292, options [nop,nop,TS val 3376940182 ecr 1574875744], length 0
+02:45:12.075075 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 397849:399163, ack 1, win 501, options [nop,nop,TS val 1574876278 ecr 3376940182], length 1314
+02:45:12.142668 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 399163:400477, ack 1, win 501, options [nop,nop,TS val 1574876345 ecr 3376940182], length 1314
+02:45:12.144960 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 385219, win 292, options [nop,nop,TS val 3376940282 ecr 1574875810], length 0
+02:45:12.176987 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 400477:401791, ack 1, win 501, options [nop,nop,TS val 1574876380 ecr 3376940282], length 1314
+02:45:12.181323 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 387847, win 292, options [nop,nop,TS val 3376940318 ecr 1574875880], length 0
+02:45:12.208097 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 401791:403105, ack 1, win 501, options [nop,nop,TS val 1574876411 ecr 3376940318], length 1314
+02:45:12.274590 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 403105:404419, ack 1, win 501, options [nop,nop,TS val 1574876477 ecr 3376940318], length 1314
+02:45:12.280401 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 390475, win 291, options [nop,nop,TS val 3376940421 ecr 1574875944], length 0
+02:45:12.310064 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 404419:405733, ack 1, win 501, options [nop,nop,TS val 1574876513 ecr 3376940421], length 1314
+02:45:12.347152 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 405733:407047, ack 1, win 501, options [nop,nop,TS val 1574876550 ecr 3376940421], length 1314
+02:45:12.353827 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 393103, win 291, options [nop,nop,TS val 3376940493 ecr 1574876047], length 0
+02:45:12.411099 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 407047:408361, ack 1, win 501, options [nop,nop,TS val 1574876614 ecr 3376940493], length 1314
+02:45:12.420216 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 395221, win 292, options [nop,nop,TS val 3376940571 ecr 1574876146], length 0
+02:45:12.420248 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 408361:409172, ack 1, win 501, options [nop,nop,TS val 1574876623 ecr 3376940571], length 811
+02:45:12.476174 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 409172:410486, ack 1, win 501, options [nop,nop,TS val 1574876679 ecr 3376940571], length 1314
+02:45:12.506441 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 410486:411800, ack 1, win 501, options [nop,nop,TS val 1574876709 ecr 3376940571], length 1314
+02:45:12.514227 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 397849, win 292, options [nop,nop,TS val 3376940656 ecr 1574876211], length 0
+02:45:12.540405 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 411800:413114, ack 1, win 501, options [nop,nop,TS val 1574876743 ecr 3376940656], length 1314
+02:45:12.606496 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 400477, win 291, options [nop,nop,TS val 3376940758 ecr 1574876278], length 0
+02:45:12.607642 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 413114:414428, ack 1, win 501, options [nop,nop,TS val 1574876810 ecr 3376940758], length 1314
+02:45:12.645047 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 414428:415742, ack 1, win 501, options [nop,nop,TS val 1574876848 ecr 3376940758], length 1314
+02:45:12.673994 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 403105, win 291, options [nop,nop,TS val 3376940820 ecr 1574876380], length 0
+02:45:12.674533 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 415742:417056, ack 1, win 501, options [nop,nop,TS val 1574876877 ecr 3376940820], length 1314
+02:45:12.740174 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 417056:418370, ack 1, win 501, options [nop,nop,TS val 1574876943 ecr 3376940820], length 1314
+02:45:12.775263 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 405733, win 291, options [nop,nop,TS val 3376940918 ecr 1574876477], length 0
+02:45:12.775808 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 418370:419684, ack 1, win 501, options [nop,nop,TS val 1574876979 ecr 3376940918], length 1314
+02:45:12.810896 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 419684:420998, ack 1, win 501, options [nop,nop,TS val 1574877014 ecr 3376940918], length 1314
+02:45:12.867439 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 407047, win 292, options [nop,nop,TS val 3376941010 ecr 1574876550], length 0
+02:45:12.879543 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 420998:422312, ack 1, win 501, options [nop,nop,TS val 1574877082 ecr 3376941010], length 1314
+02:45:12.888208 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 409172, win 292, options [nop,nop,TS val 3376941033 ecr 1574876614], length 0
+02:45:12.888217 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 422312:423121, ack 1, win 501, options [nop,nop,TS val 1574877091 ecr 3376941033], length 809
+02:45:12.943349 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 423121:424435, ack 1, win 501, options [nop,nop,TS val 1574877146 ecr 3376941033], length 1314
+02:45:12.970610 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 411800, win 292, options [nop,nop,TS val 3376941112 ecr 1574876679], length 0
+02:45:12.976844 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 424435:425749, ack 1, win 501, options [nop,nop,TS val 1574877180 ecr 3376941112], length 1314
+02:45:13.010783 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 425749:427063, ack 1, win 501, options [nop,nop,TS val 1574877213 ecr 3376941112], length 1314
+02:45:13.074986 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 427063:428377, ack 1, win 501, options [nop,nop,TS val 1574877278 ecr 3376941112], length 1314
+02:45:13.083972 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 413114, win 292, options [nop,nop,TS val 3376941218 ecr 1574876743], length 0
+02:45:13.108955 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 428377:429691, ack 1, win 501, options [nop,nop,TS val 1574877312 ecr 3376941218], length 1314
+02:45:13.119263 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 415742, win 292, options [nop,nop,TS val 3376941257 ecr 1574876810], length 0
+02:45:13.143408 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 429691:431005, ack 1, win 501, options [nop,nop,TS val 1574877346 ecr 3376941257], length 1314
+02:45:13.209698 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 431005:432319, ack 1, win 501, options [nop,nop,TS val 1574877412 ecr 3376941257], length 1314
+02:45:13.217449 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 418370, win 291, options [nop,nop,TS val 3376941348 ecr 1574876877], length 0
+02:45:13.243378 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 432319:433633, ack 1, win 501, options [nop,nop,TS val 1574877446 ecr 3376941348], length 1314
+02:45:13.276061 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 420998, win 291, options [nop,nop,TS val 3376941420 ecr 1574876979], length 0
+02:45:13.276467 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 433633:434947, ack 1, win 501, options [nop,nop,TS val 1574877479 ecr 3376941420], length 1314
+02:45:13.341881 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 434947:436261, ack 1, win 501, options [nop,nop,TS val 1574877545 ecr 3376941420], length 1314
+02:45:13.363607 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 423121, win 292, options [nop,nop,TS val 3376941499 ecr 1574877082], length 0
+02:45:13.363626 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 436261:437069, ack 1, win 501, options [nop,nop,TS val 1574877566 ecr 3376941499], length 808
+02:45:13.413360 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 437069:438383, ack 1, win 501, options [nop,nop,TS val 1574877616 ecr 3376941499], length 1314
+02:45:13.440259 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 438383:439697, ack 1, win 501, options [nop,nop,TS val 1574877643 ecr 3376941499], length 1314
+02:45:13.442781 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 425749, win 292, options [nop,nop,TS val 3376941595 ecr 1574877146], length 0
+02:45:13.476999 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 439697:441011, ack 1, win 501, options [nop,nop,TS val 1574877680 ecr 3376941595], length 1314
+02:45:13.544367 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 441011:442325, ack 1, win 501, options [nop,nop,TS val 1574877747 ecr 3376941595], length 1314
+02:45:13.555071 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 428377, win 291, options [nop,nop,TS val 3376941694 ecr 1574877213], length 0
+02:45:13.577393 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 442325:443639, ack 1, win 501, options [nop,nop,TS val 1574877780 ecr 3376941694], length 1314
+02:45:13.608080 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 443639:444953, ack 1, win 501, options [nop,nop,TS val 1574877811 ecr 3376941694], length 1314
+02:45:13.614645 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 431005, win 291, options [nop,nop,TS val 3376941763 ecr 1574877312], length 0
+02:45:13.675170 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 444953:446267, ack 1, win 501, options [nop,nop,TS val 1574877878 ecr 3376941763], length 1314
+02:45:13.711905 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 446267:447581, ack 1, win 501, options [nop,nop,TS val 1574877915 ecr 3376941763], length 1314
+02:45:13.715500 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 433633, win 291, options [nop,nop,TS val 3376941860 ecr 1574877412], length 0
+02:45:13.740969 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 447581:448895, ack 1, win 501, options [nop,nop,TS val 1574877944 ecr 3376941860], length 1314
+02:45:13.800084 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 436261, win 291, options [nop,nop,TS val 3376941948 ecr 1574877479], length 0
+02:45:13.811079 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 448895:450209, ack 1, win 501, options [nop,nop,TS val 1574878014 ecr 3376941948], length 1314
+02:45:13.817248 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 437069, win 292, options [nop,nop,TS val 3376941964 ecr 1574877566], length 0
+02:45:13.817287 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 450209:450930, ack 1, win 501, options [nop,nop,TS val 1574878020 ecr 3376941964], length 721
+02:45:13.874360 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 450930:452244, ack 1, win 501, options [nop,nop,TS val 1574878077 ecr 3376941964], length 1314
+02:45:13.906549 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 439697, win 292, options [nop,nop,TS val 3376942053 ecr 1574877616], length 0
+02:45:13.907125 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 452244:453558, ack 1, win 501, options [nop,nop,TS val 1574878110 ecr 3376942053], length 1314
+02:45:13.946761 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 453558:454872, ack 1, win 501, options [nop,nop,TS val 1574878149 ecr 3376942053], length 1314
+02:45:14.010485 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 454872:456186, ack 1, win 501, options [nop,nop,TS val 1574878213 ecr 3376942053], length 1314
+02:45:14.016610 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 442325, win 291, options [nop,nop,TS val 3376942148 ecr 1574877680], length 0
+02:45:14.043053 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 456186:457500, ack 1, win 501, options [nop,nop,TS val 1574878246 ecr 3376942148], length 1314
+02:45:14.077768 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 457500:458814, ack 1, win 501, options [nop,nop,TS val 1574878280 ecr 3376942148], length 1314
+02:45:14.084278 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 444953, win 291, options [nop,nop,TS val 3376942214 ecr 1574877780], length 0
+02:45:14.141518 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 458814:460128, ack 1, win 501, options [nop,nop,TS val 1574878344 ecr 3376942214], length 1314
+02:45:14.173840 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 460128:461442, ack 1, win 501, options [nop,nop,TS val 1574878377 ecr 3376942214], length 1314
+02:45:14.194390 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 447581, win 291, options [nop,nop,TS val 3376942319 ecr 1574877878], length 0
+02:45:14.208030 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 461442:462756, ack 1, win 501, options [nop,nop,TS val 1574878411 ecr 3376942319], length 1314
+02:45:14.274483 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 462756:464070, ack 1, win 501, options [nop,nop,TS val 1574878477 ecr 3376942319], length 1314
+02:45:14.282668 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 448895, win 292, options [nop,nop,TS val 3376942410 ecr 1574877944], length 0
+02:45:14.291878 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 450930, win 292, options [nop,nop,TS val 3376942424 ecr 1574878014], length 0
+02:45:14.291904 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 464070:464966, ack 1, win 501, options [nop,nop,TS val 1574878495 ecr 3376942424], length 896
+02:45:14.344247 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 464966:466280, ack 1, win 501, options [nop,nop,TS val 1574878547 ecr 3376942424], length 1314
+02:45:14.373190 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 466280:467594, ack 1, win 501, options [nop,nop,TS val 1574878576 ecr 3376942424], length 1314
+02:45:14.392687 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 453558, win 292, options [nop,nop,TS val 3376942523 ecr 1574878077], length 0
+02:45:14.415737 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 467594:468908, ack 1, win 501, options [nop,nop,TS val 1574878618 ecr 3376942523], length 1314
+02:45:14.480108 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 468908:470222, ack 1, win 501, options [nop,nop,TS val 1574878683 ecr 3376942523], length 1314
+02:45:14.485008 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 456186, win 292, options [nop,nop,TS val 3376942628 ecr 1574878149], length 0
+02:45:14.508788 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 470222:471536, ack 1, win 501, options [nop,nop,TS val 1574878711 ecr 3376942628], length 1314
+02:45:14.544296 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 471536:472850, ack 1, win 501, options [nop,nop,TS val 1574878747 ecr 3376942628], length 1314
+02:45:14.567496 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 458814, win 292, options [nop,nop,TS val 3376942705 ecr 1574878246], length 0
+02:45:14.609029 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 472850:474164, ack 1, win 501, options [nop,nop,TS val 1574878812 ecr 3376942705], length 1314
+02:45:14.642384 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 474164:475478, ack 1, win 501, options [nop,nop,TS val 1574878845 ecr 3376942705], length 1314
+02:45:14.657111 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 461442, win 292, options [nop,nop,TS val 3376942802 ecr 1574878344], length 0
+02:45:14.675870 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 475478:476792, ack 1, win 501, options [nop,nop,TS val 1574878879 ecr 3376942802], length 1314
+02:45:14.742594 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 476792:478106, ack 1, win 501, options [nop,nop,TS val 1574878945 ecr 3376942802], length 1314
+02:45:14.765048 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 462756, win 292, options [nop,nop,TS val 3376942898 ecr 1574878411], length 0
+02:45:14.779258 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 478106:479420, ack 1, win 501, options [nop,nop,TS val 1574878982 ecr 3376942898], length 1314
+02:45:14.786460 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 464966, win 292, options [nop,nop,TS val 3376942919 ecr 1574878477], length 0
+02:45:14.786488 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 479420:479864, ack 1, win 501, options [nop,nop,TS val 1574878989 ecr 3376942919], length 444
+02:45:14.843869 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 479864:481178, ack 1, win 501, options [nop,nop,TS val 1574879047 ecr 3376942919], length 1314
+02:45:14.844070 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 467594, win 292, options [nop,nop,TS val 3376942987 ecr 1574878547], length 0
+02:45:14.874278 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 481178:482492, ack 1, win 501, options [nop,nop,TS val 1574879077 ecr 3376942987], length 1314
+02:45:14.907094 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 482492:483806, ack 1, win 501, options [nop,nop,TS val 1574879110 ecr 3376942987], length 1314
+02:45:14.974185 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 470222, win 291, options [nop,nop,TS val 3376943099 ecr 1574878618], length 0
+02:45:14.975006 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 483806:485120, ack 1, win 501, options [nop,nop,TS val 1574879178 ecr 3376943099], length 1314
+02:45:15.013542 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 485120:486434, ack 1, win 501, options [nop,nop,TS val 1574879216 ecr 3376943099], length 1314
+02:45:15.034869 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 472850, win 291, options [nop,nop,TS val 3376943161 ecr 1574878711], length 0
+02:45:15.039863 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 486434:487748, ack 1, win 501, options [nop,nop,TS val 1574879243 ecr 3376943161], length 1314
+02:45:15.110029 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 487748:489062, ack 1, win 501, options [nop,nop,TS val 1574879313 ecr 3376943161], length 1314
+02:45:15.129053 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 475478, win 291, options [nop,nop,TS val 3376943260 ecr 1574878812], length 0
+02:45:15.144294 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 489062:490376, ack 1, win 501, options [nop,nop,TS val 1574879347 ecr 3376943260], length 1314
+02:45:15.173202 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 490376:491690, ack 1, win 501, options [nop,nop,TS val 1574879376 ecr 3376943260], length 1314
+02:45:15.226071 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 478106, win 291, options [nop,nop,TS val 3376943357 ecr 1574878879], length 0
+02:45:15.243958 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 491690:493004, ack 1, win 501, options [nop,nop,TS val 1574879447 ecr 3376943357], length 1314
+02:45:15.263908 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 479864, win 292, options [nop,nop,TS val 3376943398 ecr 1574878982], length 0
+02:45:15.263946 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 493004:493813, ack 1, win 501, options [nop,nop,TS val 1574879467 ecr 3376943398], length 809
+02:45:15.312283 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 493813:495127, ack 1, win 501, options [nop,nop,TS val 1574879515 ecr 3376943398], length 1314
+02:45:15.342514 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 495127:496441, ack 1, win 501, options [nop,nop,TS val 1574879545 ecr 3376943398], length 1314
+02:45:15.374813 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 482492, win 292, options [nop,nop,TS val 3376943506 ecr 1574879047], length 0
+02:45:15.376034 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 496441:497755, ack 1, win 501, options [nop,nop,TS val 1574879579 ecr 3376943506], length 1314
+02:45:15.444330 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 497755:499069, ack 1, win 501, options [nop,nop,TS val 1574879647 ecr 3376943506], length 1314
+02:45:15.451127 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 485120, win 291, options [nop,nop,TS val 3376943595 ecr 1574879110], length 0
+02:45:15.475233 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 499069:500383, ack 1, win 501, options [nop,nop,TS val 1574879678 ecr 3376943595], length 1314
+02:45:15.509089 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 500383:501697, ack 1, win 501, options [nop,nop,TS val 1574879712 ecr 3376943595], length 1314
+02:45:15.525298 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 487748, win 291, options [nop,nop,TS val 3376943664 ecr 1574879216], length 0
+02:45:15.577537 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 501697:503011, ack 1, win 501, options [nop,nop,TS val 1574879780 ecr 3376943664], length 1314
+02:45:15.611773 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 503011:504325, ack 1, win 501, options [nop,nop,TS val 1574879814 ecr 3376943664], length 1314
+02:45:15.631607 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 490376, win 291, options [nop,nop,TS val 3376943768 ecr 1574879313], length 0
+02:45:15.639958 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 504325:505639, ack 1, win 501, options [nop,nop,TS val 1574879843 ecr 3376943768], length 1314
+02:45:15.706855 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 505639:506953, ack 1, win 501, options [nop,nop,TS val 1574879910 ecr 3376943768], length 1314
+02:45:15.709458 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 491690, win 292, options [nop,nop,TS val 3376943854 ecr 1574879376], length 0
+02:45:15.741846 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 506953:508267, ack 1, win 501, options [nop,nop,TS val 1574879945 ecr 3376943854], length 1314
+02:45:15.742953 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 493813, win 292, options [nop,nop,TS val 3376943887 ecr 1574879447], length 0
+02:45:15.742983 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 508267:508700, ack 1, win 501, options [nop,nop,TS val 1574879946 ecr 3376943887], length 433
+02:45:15.811075 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 508700:510014, ack 1, win 501, options [nop,nop,TS val 1574880014 ecr 3376943887], length 1314
+02:45:15.845763 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 510014:511328, ack 1, win 501, options [nop,nop,TS val 1574880048 ecr 3376943887], length 1314
+02:45:15.873643 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 511328:512642, ack 1, win 501, options [nop,nop,TS val 1574880076 ecr 3376943887], length 1314
+02:45:15.944190 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 512642:513956, ack 1, win 501, options [nop,nop,TS val 1574880147 ecr 3376943887], length 1314
+02:45:15.977318 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 513956:515270, ack 1, win 501, options [nop,nop,TS val 1574880180 ecr 3376943887], length 1314
+02:45:16.009065 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 515270:516584, ack 1, win 501, options [nop,nop,TS val 1574880212 ecr 3376943887], length 1314
+02:45:16.038232 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 516584:516714, ack 1, win 501, options [nop,nop,TS val 1574880241 ecr 3376943887], length 130
+02:45:16.766190 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 493813:495127, ack 1, win 501, options [nop,nop,TS val 1574880969 ecr 3376943887], length 1314
+02:45:17.713591 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 496441, win 292, options [nop,nop,TS val 3376943953 ecr 1574879515], length 0
+02:45:17.713805 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 516714:518028, ack 1, win 501, options [nop,nop,TS val 1574881916 ecr 3376943953], length 1314
+02:45:17.759694 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 497755, win 291, options [nop,nop,TS val 3376945985 ecr 1574879579], length 0
+02:45:17.759714 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 518028:519342, ack 1, win 501, options [nop,nop,TS val 1574881962 ecr 3376945985], length 1314
+02:45:17.759715 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 519342:520656, ack 1, win 501, options [nop,nop,TS val 1574881962 ecr 3376945985], length 1314
+02:45:17.759852 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 499069, win 291, options [nop,nop,TS val 3376945985 ecr 1574879647], length 0
+02:45:17.759866 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 500383, win 289, options [nop,nop,TS val 3376945985 ecr 1574879678], length 0
+02:45:17.759874 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 520656:521970, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759875 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 521970:523284, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759883 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 501697, win 288, options [nop,nop,TS val 3376945985 ecr 1574879712], length 0
+02:45:17.759889 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 523284:524598, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759889 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 524598:525912, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759895 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 503011, win 291, options [nop,nop,TS val 3376945985 ecr 1574879780], length 0
+02:45:17.759902 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 504325, win 291, options [nop,nop,TS val 3376945985 ecr 1574879814], length 0
+02:45:17.759907 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 525912:527226, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759908 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 527226:528540, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759914 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 505639, win 291, options [nop,nop,TS val 3376945985 ecr 1574879843], length 0
+02:45:17.759918 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 528540:529854, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759919 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 529854:531168, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.759995 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 506953, win 291, options [nop,nop,TS val 3376945985 ecr 1574879910], length 0
+02:45:17.760002 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 508267, win 291, options [nop,nop,TS val 3376945985 ecr 1574879945], length 0
+02:45:17.760007 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 531168:532482, ack 1, win 501, options [nop,nop,TS val 1574881963 ecr 3376945985], length 1314
+02:45:17.760012 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 508700, win 292, options [nop,nop,TS val 3376945985 ecr 1574879946], length 0
+02:45:17.760210 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 510014, win 291, options [nop,nop,TS val 3376945985 ecr 1574880014], length 0
+02:45:17.760224 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 511328, win 291, options [nop,nop,TS val 3376945986 ecr 1574880048], length 0
+02:45:17.760230 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 512642, win 291, options [nop,nop,TS val 3376945986 ecr 1574880076], length 0
+02:45:17.760237 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376945986 ecr 1574880147], length 0
+02:45:17.760243 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376945986 ecr 1574880147,nop,nop,sack 1 {515270:516584}], length 0
+02:45:17.760251 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376945986 ecr 1574880147,nop,nop,sack 1 {515270:516714}], length 0
+02:45:17.760410 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376945986 ecr 1574880147,nop,nop,sack 2 {493813:495127}{515270:516714}], length 0
+02:45:17.786221 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 513956:515270, ack 1, win 501, options [nop,nop,TS val 1574881989 ecr 3376945986], length 1314
+02:45:18.021925 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946244 ecr 1574880147,nop,nop,sack 1 {515270:518028}], length 0
+02:45:18.021947 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 532482:533796, ack 1, win 501, options [nop,nop,TS val 1574882225 ecr 3376946244], length 1314
+02:45:18.067880 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:519342}], length 0
+02:45:18.067906 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 533796:535110, ack 1, win 501, options [nop,nop,TS val 1574882271 ecr 3376946289], length 1314
+02:45:18.068258 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:520656}], length 0
+02:45:18.068268 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 535110:536424, ack 1, win 501, options [nop,nop,TS val 1574882271 ecr 3376946289], length 1314
+02:45:18.068277 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:521970}], length 0
+02:45:18.068284 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 536424:537738, ack 1, win 501, options [nop,nop,TS val 1574882271 ecr 3376946289], length 1314
+02:45:18.068449 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:523284}], length 0
+02:45:18.068467 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 537738:539052, ack 1, win 501, options [nop,nop,TS val 1574882271 ecr 3376946289], length 1314
+02:45:18.069282 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:524598}], length 0
+02:45:18.069317 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 539052:540366, ack 1, win 501, options [nop,nop,TS val 1574882272 ecr 3376946289], length 1314
+02:45:18.069330 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:525912}], length 0
+02:45:18.069338 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [.], seq 540366:541680, ack 1, win 501, options [nop,nop,TS val 1574882272 ecr 3376946289], length 1314
+02:45:18.069346 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:527226}], length 0
+02:45:18.069355 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946289 ecr 1574880147,nop,nop,sack 1 {515270:528540}], length 0
+02:45:18.069739 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946290 ecr 1574880147,nop,nop,sack 1 {515270:529854}], length 0
+02:45:18.069761 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946290 ecr 1574880147,nop,nop,sack 1 {515270:531168}], length 0
+02:45:18.069771 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 513956, win 291, options [nop,nop,TS val 3376946290 ecr 1574880147,nop,nop,sack 1 {515270:532482}], length 0
+02:45:18.093585 IP 99.181.69.125.1935 > 10.8.2.2.55694: Flags [.], ack 532482, win 268, options [nop,nop,TS val 3376946315 ecr 1574881989], length 0
+02:45:18.093617 IP 10.8.2.2.55694 > 99.181.69.125.1935: Flags [P.], seq 541680:542813, ack 1, win 501, options [nop,nop,TS val 1574882296 ecr 3376946315], length 1133

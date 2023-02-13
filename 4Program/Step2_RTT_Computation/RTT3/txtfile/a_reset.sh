@@ -1,0 +1,17 @@
+rm a_minRTT.txt
+rm avpnping_min.txt
+rm avpnping.txt
+rm excel_rtt.txt
+rm vpn_rtt.txt
+rm nord_rtt.txt
+rm long_beping_which.txt
+rm long_ping_which.txt
+rm lping_timestamp.txt
+rm ltime_ping.txt
+rm pingseq.txt
+rm RTT3_VPNs.ods
+rm test.txt
+rm vpn1ip_behost.txt
+rm vpn2ip.txt
+rm min.txt
+rm minrtt_lessthan_zero.txt
