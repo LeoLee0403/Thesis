@@ -1,5 +1,6 @@
 rm ackk.txt
 rm excel.txt
+rm min.txt
 rm ingest_rtt.txt
 rm seq_acknum.txt
 rm seq_acktime.txt
