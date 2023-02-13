@@ -9,9 +9,9 @@
 - list_vpn.py:
     - It can receive relevant properties and output/arrange them to **lvpn_location_list_2023.txt**
 - lvpn_location_list_2023.txt
-    - We classify the VPN into the list according to different VPN server location. there are 87 NordVPN locations in 2023, and in each location(row), the list format is *[latitude] [longitude] [country] [city] [servercount] [domain1] [domain2] [domain3] ...*
+    - We classify the VPN into the list according to different VPN server location. there are 87 NordVPN locations in 2023, and in each location(row), the list format is *[latitude] [longitude] [country] [city] [server count] [domain1] [domain2] [domain3] ...*
 - a_reset.sh
-    - run it by **`bash a_reset.sh`** It will remove all the output files. If you want to redo the experiment, then you can run the file and then run **a_main.sh** again. Besides, all the experiments have **a_main.sh** and **a_reset.sh** for you to redo the experiment.
+    - Run it by **`bash a_reset.sh`** It will remove all the output files. If you want to redo the experiment, then you can run the file and then run **a_main.sh** again. Besides, all the experiments have **a_main.sh** and **a_reset.sh** for you to redo the experiment.
 
 ### Traffic1_Nslab_VPN
 - a_main.sh
@@ -21,7 +21,7 @@
 - avpn.txt : VPN locations (named in city)
 - a_main.sh
     - First you have to build your own "**ingest_list.txt**". You need to your the order (varies by machines) of Twitch ingest server in the OBS list![](https://i.imgur.com/mUjxMXM.png)and then find the airport code of each ingest server, you can find the airport code in [twitch status](https://twitchstatus.com/) or try to start streaming on each ingest server and intercept the traffic to find the airport code.
-    - The script will first run `bash reset.sh`, it will reset the OBS list to the top 1 ingest server. For example in obove figure, it will reset to **Asia: Taiwan, Taipei (3)** ingest server for streaming.
+    - The script will first run `bash reset.sh`, it will reset the OBS list to the top 1 ingest server. For example in above figure, it will reset to **Asia: Taiwan, Taipei (3)** ingest server for streaming.
     - This example shows using 3 VPN to probe 3 ingest server. 
     - **ldetet_and_test_example.sh** will get the traffic between the pair of VPN and ingest server, and save the traffic to pcapfiles.
     - After getting pairs of an ingest server and all VPNs, **switch_obs.sh** will switch to next ingest server by OBS
@@ -32,7 +32,7 @@
     - It will switch the ingest server to the next one according to the OBS list. For example, if now ingest is Taipei(3), then it will switch to Taipei(1) for streaming.
 - ldetet_and_test_example.sh
     - It will accept a VPN and a ingest server, and you need to take change vpn_net_interface (varies by machines). You can use ifconfig to find the interface. The **vpn_net_interface** in this case is **nordlynx**, and the **vpn_net_interface IP** usually **10.x.x.x** ![](https://i.imgur.com/zzJ85OF.png)
-    - Use `nordvpn connect ${vpn}` to connect the NordVPN, the VPN we used is **city name**, After connection, it will check the connect_status, if VPN failed then change to next VPN with another location to probe the same ingest server.
+    - Use `nordvpn connect ${vpn}` to connect the NordVPN, the VPN we used is **city name**, after connection, it will check the connect_status, if VPN failed then change to next VPN with another location to probe the same ingest server.
     - OBS Connection Test: `obs --startstreaming&` to start streaming, it will generate the traffic between the VPN and the ingest server. And you should sleep for more than 10 sec to wait the OBS open. Then this example uses tcpdump to intercept the traffic for 10 sec. If the **reply_packet_count** from twitch ingest server less than threshold (this example set the threshold = 20 packets), then regard it as OBS Failed, then exit and change to next VPN with another location to probe the same ingest server.
     - Formal Tcpdump: If pass the OBS connection test, this example will do formal tcpdump for 10 sec, and if **formal_reply_packet_count** less than 50, then regard it as OBS failed. Else regard it as successfully interception.
     - Besides, all the VPN connection and tcpdump interception process will be recorded in **${ingest}_record.txt**
@@ -47,10 +47,10 @@
 
 ## Step 2. RTT_Computation
 
-### RTT1/example (host ip錄影之後要補改, 還要加上result!)
+### RTT1/example
 - nslab_[VPN first domain].pcap
     - These .pcap files are traffic between Nslab and VPN. For example, use `tcpdump -nn -r nslab_pl128.pcap`, we can get the traffic between the host and VPN. Host ip will depend on your host machine, if we want to do the experiment in Nslab, then the host ip will be **140.112.x.x**
-    - In this example, **xx.xx.xx.xx** is our host ip. We need to find 
+    - In this example, **192.168.0.10** is our host ip. We need to find 
         - Time1 ... IP host_ip > VPN_ip ... **request** ... , seq **i** ...
         - ...
         - ...
@@ -60,7 +60,7 @@
     - The example compute the RTT of the three pcapfile we get in Traffic1_Nslab_VPN. First we convert the pcapfile to text file for easy operation.
     - If your host is in the nslab, then the host_ip should change to the nslab ip: **140.112.x.x**.
     - lping_timestamp.txt 
-        - Each packet's timestamp. For exapmple, time_stamp = 01:08:31.947975
+        - Each packet's timestamp. For example, time_stamp = 01:08:31.947975
     - ltime_ping.txt 
         - If time_stamp is 01:08:31.947975, it will be parsed out 0831.947975
     - pingseq.txt
@@ -72,8 +72,8 @@
 - rtt.py
     - The parsed timestamp will be converted to useful time value (in second). And then minus the bias (first packet's time value) from their time value.
     - If find the packet is host > vpn, and next packet is vpn > host, and pingseq are the same, then pair the two packets and subtract their time value to get the RTT of this pair.
-    - Finally output the min_RTT between each Nslab_VPN, and these RTT1 between Nslab and VPN are used to minus the overmeasured RTT2 and RTT3 to get the real RTT2 and RTT3
-- Result
+    - Finally output the min_RTT between each Nslab_VPN, and these RTT1 between Nslab and VPN are used to minus the over measured RTT2 and RTT3 to get the real RTT2 and RTT3
+- [RTT1 Example Result](https://hackmd.io/2Vnz9FLpROS1qtSCG8V34A)
 - Besides, the file RTT1_for_RTT2.txt RTT1_for_RTT3.txt are RTT1 between NSLAB and 82 VPN in my experiment for subtraction.
 
 ### RTT2
@@ -158,7 +158,7 @@
         -  **comput_v1pingv2.py**
             -  Compute the RTT between VP_VPN and LM_VPN
         -  avpnping_min.txt
-            -  Record minumum RTT of each [VP_VPN, LM_VPN] pair
+            -  Record minimum RTT of each [VP_VPN, LM_VPN] pair
     -  comput_v1pingv2.py
         - If find the packet is VP_VPN > LM_VPN, and next packet is LM_VPN > VP_VPN, and pingseq are the same, then pair the two packets and subtract their time value to get the RTT of this pair.
         - Finally output minimum RTT.
@@ -209,7 +209,7 @@
 ### 3shortest_dist
 - a_main.sh
     - **get_distance_by_latlong.sh** 
-        - Get distance (in km) betwenen VPN each other by latitude and longitude
+        - Get distance (in km) between VPN each other by latitude and longitude
         - **distance.py**
             - Give two position's latitude and longitude, then return the geo-distance between the two position.
         - output to nord_distance.txt
@@ -243,7 +243,7 @@
     - **CBGcompute.sh** CBGcompute will predict target distance to get how many circle covers of each VPN
         - For each ingest, the goal is to find the cover count of each VPN
         - **int_radius_vpn1_target** is the target distance, in CBG it is regarded as radius (here we only care about radius < 2000km), and each VPN's location is the center
-        - **int_dist_vpn1_vpn2** is the distacne between the a VPN and the center.
+        - **int_dist_vpn1_vpn2** is the distance between the a VPN and the center.
         - If int_dist_vpn1_vpn2 <= int_radius_vpn1_target, then the VPN will be in the circle, so cover count++
         - **Output to count_[ingest].txt**. It records each VPN's cover count to the ingest server.
     - **a_generate_cover_rank.sh** # 
@@ -313,31 +313,11 @@
 - performance.txt
     - Results include the number of mapping in different error distance range of each method, and get the Cumulative probability in each error distance range.
 
-## README.txt要補充的
- 1. 每個資料夾都有a_main.sh and a_reset.sh
- 2. .sh檔用bash執行檔案 e.g. bash a_main.sh
- 3. .py用python3執行檔案 e.g. python3.performance.p
 
 # 要處理事項
-1. **先上傳論文**
-2. **Step3 所有.ods前都要先round 3**
-3. 檢查資料一致性
-    - RTT2 pcap -> txt再跑完並和geolocation的做比對
-    - RTT3 pcap -> txt再跑完並和geolocation的做比對
-    - ingest_rtt也要和 geolocation做比對才能在Step3用
-    - nord_rtt.txt, vpn_rtt.txt也要做比對才能在Step3用
-    - CBG predict 要從剛完成的shortest dist資料夾拿才run
-    - Hybrid1 2的cover_rank和dist_rank要從CBG和shortest dist資料夾拿才run
-    - 6個方法檢查ods(已round 3)
-    - Step 4 Evaluation的metric要從6個方法資料夾拿才能run並檢驗
-4. step2 RTT1錄影完要補上當時的的host_ip, **程式檔案裡面也要改**
-5. excel的空白格式每個人電腦打開可能不太一樣？
-6. 上傳前先備份+ chmod 777 -R [目錄]  可以讓目錄以下 包含子目錄權限都打開
-7. 最外層的注意事項(可寫在最前面)
-8. program以外要補充的也寫在README
-    - Data
-    - Result:
-        - 放final RTT2 RTT3
-        - 放所有method的ods
-        - 放evaluation的結果(可從論文拿)
-        - 補CDF 
+
+1. [錄影、寫入README] step2 RTT1錄影完要補上當時的的host_ip, **程式檔案裡面也要改**
+3. [program] 上傳時program都以reset前狀態
+4. [program以外寫入README] program以外要補充的也寫在README
+5. [最終上傳]上傳前先備份+ chmod 777 -R [目錄]  可以讓目錄以下 包含子目錄權限都打開
+
